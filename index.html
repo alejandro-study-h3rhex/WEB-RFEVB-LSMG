@@ -1,85 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/favicon/favicon.ico" />
-    <title>RFEVB | Incio</title>
 
-    <!-- METADATOS -->
-    <meta
-      name="description"
-      content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la info de tus equipos."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/favicon/favicon.ico" />
+  <title>RFEVB | Incio</title>
 
-    <meta name="application-name" content="Real Federación de Voleibol" />
-    <meta name="author" content="Real Federación Española de Voleibol" />
+  <!-- METADATOS -->
+  <meta name="description"
+    content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la info de tus equipos." />
 
-    <!--LINK HOJAS DE ESTILO (CSS)-->
+  <meta name="application-name" content="Real Federación de Voleibol" />
+  <meta name="author" content="Real Federación Española de Voleibol" />
 
-    <!--CSS ESPECIFICO DE TODA LA PAGINA-->
-    <link rel="stylesheet" href="./styles/index.css" hreflang="CSS" />
-    <!--CSS GLOBAL DE TODA LA WEB-->
-    <link rel="stylesheet" href="./styles/global.css" hreflang="CSS" />
-  </head>
-  <body>
-    <header>
-      <div class="logo-federación">
-        <img
-          src="./assets/imgs/logoFederacion.png"
-          alt="Logo Real Federacion Española de Voleibol"
-          title="Real Federacion Española de Voleibol"
-          loading="eager"
-          width="56"
-          height="106"
-        />
-      </div>
-      <div class="header-content"/>
-        <h1>Real Federación Española de Voleibol</h1>
-        <div class="menu-navegacion">
-          <h2 id="current-page-title">Pagina Principal</h2>
-          <button  
-            id="menu-toggle" 
-            aria-controls="main-nav" 
-            aria-expanded="false"
-            >☰
-          </button>
-          
-          <nav hidden>
-            <ul>
-              <li>
-                <a href="#" title="Inicio" target="_self">Inicio</a>
-              </li>
-              <li>
-                <a href="#" title="Liga" target="_self">Liga</a>
-              </li>
-              <li>
-                <a href="#" title="Jornadas" target="_self">Jornadas</a>
-              </li>
-              <li>
-                <a href="#" title="Noticias" target="_self">Noticias</a>
-              </li>
-              <li>
-                <a href="#" title="Historia" target="_self">Historia</a>
-              </li>
-            </ul>
-          </nav>
-        
-        </div>
-      </div>
-    </header>
-    <main></main>
-    <footer>
-       <div class="logo-federación">
-        <img
-          src="./assets/imgs/logoFederacion.png"
-          alt="Logo Real Federacion Española de Voleibol"
-          title="Real Federacion Española de Voleibol"
-          loading="eager"
-          width="56"
-          height="106"
-        />
-      </div>
-    </footer>
-  </body>
+  <!--LINK HOJAS DE ESTILO (CSS)-->
+
+  <!--CSS ESPECIFICO DE TODA LA PAGINA-->
+  <link rel="stylesheet" href="./styles/index.css" hreflang="CSS" />
+  <!--CSS GLOBAL DE TODA LA WEB-->
+  <link rel="stylesheet" href="./styles/global.css" hreflang="CSS" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-federación">
+      <img src="./assets/imgs/logoFederacion.png" alt="Logo Real Federacion Española de Voleibol"
+        title="Real Federacion Española de Voleibol" loading="eager" width="56" height="106" />
+    </div>
+    <div class="header-content" />
+    <h1>Real Federación Española de Voleibol</h1>
+    <div class="menu-navegacion">
+      <h2 id="current-page-title">Pagina Principal</h2>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+      <label for="menu-toggle" class="menu-toggle-label">☰</label>
+
+      <nav hidden>
+        <ul>
+          <li>
+            <a href="#" title="Inicio" id="current_page" target="_self">Inicio</a>
+          </li>
+          <li>
+            <a href="#" title="Liga" target="_self">Liga</a>
+          </li>
+          <li>
+            <a href="#" title="Jornadas" target="_self">Jornadas</a>
+          </li>
+          <li>
+            <a href="#" title="Noticias" target="_self">Noticias</a>
+          </li>
+          <li>
+            <a href="#" title="Historia" target="_self">Historia</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    </div>
+  </header>
+  <main></main>
+  <footer>
+    <div class="logo-federación">
+      <img src="./assets/imgs/logoFederacion.png" alt="Logo Real Federacion Española de Voleibol"
+        title="Real Federacion Española de Voleibol" loading="eager" width="56" height="106" />
+    </div>
+  </footer>
+</body>
+
 </html>
