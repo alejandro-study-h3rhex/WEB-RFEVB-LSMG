@@ -299,6 +299,9 @@ footer {
 
 /*ESTILOS TABLET*/
 @media (min-width: 727px) and (max-width: 1366px) {
+  header{
+    background-color: red;
+  }
   footer {
     gap: 50px;
   }
