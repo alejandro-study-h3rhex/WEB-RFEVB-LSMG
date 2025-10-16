@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--LENGUAJE DE LA PAGINA-->
+<html lang="es">
+  <head>
+    <!--CONFIGURACION DE LA PAGINA-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ICONO DE LA PAGINA-->
+    <link rel="icon" href="../assets/favicon/favicon.ico" />
+    <!--TITULO DE LA PAGINA-->
+    <title>RFEVB | Incio</title>
+
+    <!-- METADATOS -->
+    <meta
+      name="description"
+      content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la info de tus equipos."
+    />
+
+    <meta name="application-name" content="Real Federación de Voleibol" />
+    <meta name="author" content="Real Federación Española de Voleibol" />
+
+    <!--LINK HOJAS DE ESTILO (CSS)-->
+
+    <!--CSS ESPECIFICO DE TODA LA PAGINA-->
+    <link rel="stylesheet" href="../styles/global.css" hreflang="CSS" />
+    <!--CSS GLOBAL DE TODA LA WEB-->
+    <link rel="stylesheet" href="../styles/global.css" hreflang="CSS" />
+  </head>
+
+  <body id="app">
+    <!--HEADER-->
+    <header>
+      <!--LOGO DE LA FEDERACIÓN-->
+      <div class="logo-federación">
+        <img
+          src="../assets/imgs/logoFederacion.png"
+          alt="Logo Real Federacion Española de Voleibol"
+          title="Real Federacion Española de Voleibol"
+          loading="eager"
+          width="56"
+          height="106"
+        />
+      </div>
+      <div class="header-content" />
+      <!--TITULO DEL HEADER-->
+      <h1>Real Federación Española de Voleibol</h1>
+      <!--MENU DE NAVEGACION-->
+      <div class="menu-navegacion">
+        <!--TITULO DE PAGINA ACTUAL-->
+        <h2 id="current-page-title">Jornadas</h2>
+        <!--MENU HAMBURGUESA-->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+        <label for="menu-toggle" class="menu-toggle-label">☰</label>
+        <!--MENÚ DESPLEGABLE-->
+        <nav hidden>
+          <ul>
+            <li>
+              <a href="#" title="Inicio" id="current_page" target="_self"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a href="../sub-paginas/liga.html" title="Liga" target="_self"
+                >Liga</a
+              >
+            </li>
+            <li>
+              <a
+                href="../sub-paginas/jornadas.html"
+                title="Jornadas"
+                target="_self"
+                >Jornadas</a
+              >
+            </li>
+            <li>
+              <a
+                href="../sub-paginas/noticias.html"
+                title="Noticias"
+                target="_self"
+                >Noticias</a
+              >
+            </li>
+            <li>
+              <a
+                href="../sub-paginas/historia.html"
+                title="Historia"
+                target="_self"
+                >Historia</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--MENÚ DESPLEGABLE DE NAVEGACIÓN-->
+    <main>
+      <p>
+        Jornadas
+      </p>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <!--LOGO DE LA FEDERACIÓN-->
+      <div class="logo-federación">
+        <img
+          src="../assets/imgs/logoFederacion.png"
+          alt="Logo Real Federacion Española de Voleibol"
+          title="Real Federacion Española de Voleibol"
+          loading="eager"
+          width="56"
+          height="106"
+        />
+      </div>
+      <div class="footer-info">
+        <!--INFORMACIÓN DE CONTACTO-->
+        <div class="contacto-info-container">
+          <ul>
+            <li><b>Direccion:</b> Paseo Imperial 6 piso 3º A</li>
+            <li>28005 - Madrid</li>
+            <li>
+              <b>Teléfono: </b><a href="tel:+34917014090">+34917014090</a>.
+            </li>
+            <li>
+              <b>Correo: </b
+              ><a href="mailto:correo@rfevb.com" title="correo@rfevb.com"
+                >correo@rfevb.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--BOTÓN PARA VOLVER AL INICIO-->
+        <a href="#" target="_top" id="irInicio" title="Ir a inicio">Inicio</a>
+      </div>
+    </footer>
+  </body>
+</html>
