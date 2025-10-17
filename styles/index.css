@@ -1,7 +1,8 @@
 main article{
     /*Centra todo el texto de los artículos*/
     text-align: center;
-    max-width: 80%;
+    max-width: 90%;
+    margin-bottom: 20px;
 }
 
 /*TITULO Y IMAGEN NOTICIA DESTACA*/
@@ -12,7 +13,6 @@ main article{
     width: 100%;
 }
 
-
 .cabecera-noticia img{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -21,6 +21,7 @@ main article{
 .cabecera-noticia h3{
     /*Posición absoluta respecto al contenedor gracias a esto no ocupa espacio*/
     position: absolute;
+    z-index: 1;
     /*Mantiene el texto en el fondo de la imagen */
     bottom: -15px;
     left: 0;
@@ -45,6 +46,90 @@ main article{
     text-align: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    box-shadow: 0 3px 4px rgba(22, 22, 22, 0.50);
+}
 
-    filter: drop-shadow(0 3px 4px rgba(22, 22, 22, 0.50));
+/*IMÁGENES DESTACADAS*/
+.imágenes-destacadas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+
+    /*TAMAÑO CONTENEDOR*/
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    min-height:  90px;
+
+    background-color: #84b6f4;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(22, 22, 22, 0.50);
+}
+.imágenes-destacadas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*CLASIFIACIONES*/
+.clasificaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*REGLAS PARA EL TEXTO*/
+    text-align: center;
+    font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+
+    width: 100%;
+    padding: 10px;
+
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clasificaciones table{
+    /*Limpia los bordes dobles */
+    border-collapse: collapse;
+}
+
+/*TITULO TABLA*/
+.clasificaciones .tituloTabla{
+    background: #4d82bc;
+}
+
+/*POSICION EN LA CLASIFICACION*/
+.clasificaciones .clasificación-posic{
+    background: #fdfd96;
+    box-shadow: inset -2px 0 3px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+}
+
+.clasificaciones th{
+    text-align: center;
+    padding: 2px 2px;
+    border: none;
+    font-weight: 600;
+}
+
+.clasificaciones thead tr{
+    background: #70a4e5;
+    color: white;
+}
+
+.clasificaciones tbody td{
+    background: #c4dafa;
+    color: #161616;
+    padding: 3px 2px;
+    transition: background-color 0.3s ease;
+    border: none;
+    margin: 0;
+}
+
+/*AFECTA A TODA LA LINEA*/
+.clasificaciones tbody tr:hover td {
+    background-color: #88ade7; /* Un color ligeramente más claro al pasar el ratón */
 }

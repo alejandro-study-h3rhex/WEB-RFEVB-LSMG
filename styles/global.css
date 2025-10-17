@@ -26,7 +26,7 @@ body {
   min-height: 100vh;
 
   /*OTROS*/
-  overflow-x: hidden;
+  overflow-x: scroll;
   background-color: #eeebe4;
 }
 
@@ -89,6 +89,7 @@ header {
   gap: 10px;
   padding: 3px;
   margin-bottom: 10px;
+    z-index: 2;
 
   /*BORDE*/
   border-bottom-left-radius: 10px;
@@ -129,31 +130,29 @@ header h1 {
 
 /*MENU NAVEGACIÓN HEADER*/
 .menu-navegacion {
-  /*ORDEN*/
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
+      /*ORDEN*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
 }
 
 .menu-navegacion nav {
-  position: absolute;
-  display: none;
-  top: 110%;
-  left: 20vw;
-  z-index: 10;
+    position: absolute;
+    display: none;
+    top: 110%;
+    left: 20vw;
+    /*TAMAÑO*/
+    width: 60%;
+    height: auto;
 
-  /*TAMAÑO*/
-  width: 60%;
-  height: auto;
-
-  /*COLORES*/
-  background-color: #84b6f4;
-  border: 2px solid #4d82bc;
-  border-radius: 10px;
-  padding: 10px;
-  filter: drop-shadow(0 10px 4px #00000030);
+    /*COLORES*/
+    background-color: #84b6f4;
+    border: 2px solid #4d82bc;
+    border-radius: 10px;
+    padding: 10px;
+    filter: drop-shadow(0 10px 4px #00000030);
 }
 
 .menu-navegacion ul {
@@ -227,6 +226,7 @@ main{
     align-items: center;
 
     margin-bottom: 10px;
+    z-index: 1;
 }
 
 /*FOOTER - PIE DE PAGINA*/
@@ -237,7 +237,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-
+    z-index: 2;
   background-color: #c4dafa;
 
   /*TAMAÑO*/
