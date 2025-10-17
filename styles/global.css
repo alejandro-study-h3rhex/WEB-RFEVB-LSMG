@@ -31,7 +31,7 @@ body {
   min-height: 100vh;
 
   /*OTROS*/
-  overflow-x: scroll;
+  overflow-x: hidden;
   background-color: #eeebe4;
 }
 
@@ -319,7 +319,7 @@ footer {
   background-color: #fdfd96;
 }
 
-/*ESTILOS TABLET*/
+/*ESTILOS TABLET Y DE MAS DISPOSITIVOS*/
 @media (min-width: 766px) {
   header {
     gap: 50px;
