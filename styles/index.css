@@ -1,3 +1,12 @@
+#pagina-principal-contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+/*SECCIÓN PRINCIPAL DE EL CONTENIDO DE LA PAGINA*/
 #sección-principal{
     /*Centra el contenido*/
     display: flex;
@@ -5,6 +14,7 @@
     justify-content: center;
     align-items: center;
 
+    width: 100%;
     margin-bottom: 10px;
     z-index: 1;
 }
@@ -182,13 +192,41 @@
 .fragmento-historia-article a:hover{
     background: #eeee69;
 }
+/*LATERAL DE LA PAGINA (EN MOBILES ESTA ABAJO)
+    PATROCINADORES Y FRAGMENTO HISTORIA
+*/
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+#patrocinadores{
+    display: grid;
+    /*Columnas infinitas de 2*/
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    margin: 10px;
+
+    width: 75%;
+    border-radius: 10px;
+
+    background-color: #e0dbd0;
+}
 
 /*TABLETS, LAPTOP, DESKTOP>766*/
-@media (min-width: 766px){
+@media (min-width: 766px) and (max-width: 1023px){
     #noticia-principal-article{
         width: 100%;
         max-width: 500px;
     }
+
     /*IMÁGENES DESTACADAS*/
     .imágenes-destacadas{
         /*TAMAÑO CONTENEDOR*/
@@ -227,5 +265,23 @@
     .fragmento-historia-article p{
         font-size: 16px;
     }
+
+    aside{
+        width: 60%;
+    }
 }
+
+@media (min-width: 1024px){
+    #noticia-principal-article {
+        width: 50%;
+    }
+    /*
+        Pasar el aside de abajo a la
+        grid-template-columns: 2fr 1fr; (el tamaño de las columnas se define con los fr)
+    */
+    #pagina-principal-contenido{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
 
