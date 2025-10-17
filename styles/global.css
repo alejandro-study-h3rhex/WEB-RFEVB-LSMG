@@ -1,17 +1,36 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("../assets/font/Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
+  /*
+    Weigh: 100 - 900
+    100 - Thin
+    200 - ExtraLight
+    300 - Light
+    400 - Regular
+    500 - Medium
+    600 - SemiBold
+    700 - Bold
+    800 - ExtraBold
+    900 - Black
+  */
+}
+
 body {
   /*ORDEN*/
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
   /*TAMAÑO*/
   width: 100%;
   min-height: 100vh;
 
   /*OTROS*/
   overflow-x: hidden;
+  background-color: #eeebe4;
 }
 
-/*ESTILOS ESTANDAR TEXTO*/
+/*ESTILOS ESTÁNDAR TEXTO*/
 h1,
 h2,
 h3,
@@ -19,63 +38,354 @@ h4,
 h5,
 p,
 a {
-  font-family: "../assets/font/Lexend/Lexend-VariableFont_wght.ttf";
+  font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color: #161616;
+}
+
+/*TÍTULOS*/
+h1 {
+  color: #4d82bc;
+  font-size: 30px;
+}
+
+h2 {
+  color: #84b6f4;
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*TEXTO Y ENLACES*/
+p,
+a {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /*ESTILOS HEADER*/
 header {
+  position: relative;
+
   /*ORDEN*/
   display: flex;
   flex-direction: row;
+  /*Separa los contenidos*/
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 3px;
 
+  margin: 0;
+
+  /*BORDE*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
   /*TAMAÑO*/
   width: 100%;
-  height: 10%;
+  height: auto;
+  min-height: 80px;
 
   /*COLORES*/
   background-color: #c4dafa;
+  filter: drop-shadow(0 2px 4px #00000045);
 }
 
-/*MENU NAVEGACION HEADER*/
+/*TÍTULO DEL HEADER*/
+header h1 {
+  padding: 3px;
+  text-shadow: 1px 1px 2px #4d82bc;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #fdfd96;
+}
+
+#current-page-title {
+  color: #161616;
+  background-color: #84b6f4;
+  border-radius: 3px;
+  padding: 5px;
+
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  filter: drop-shadow(0 4px 5px #00000025);
+}
+
+/*MENU NAVEGACIÓN HEADER*/
 .menu-navegacion {
   /*ORDEN*/
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 9px;
 }
 
-#current-page-title {
+.menu-navegacion nav {
+  position: absolute;
+  display: none;
+  top: 110%;
+  left: 20vw;
+  z-index: 10;
+
+  /*TAMAÑO*/
+  width: 60%;
+  height: auto;
+
+  /*COLORES*/
   background-color: #84b6f4;
-  border-radius: 6px;
+  border: 2px solid #4d82bc;
+  border-radius: 10px;
   padding: 10px;
-  text-transform: uppercase;
-
-  filter: drop-shadow(0 4px 5px #00000025);
+  filter: drop-shadow(0 10px 4px #00000030);
 }
 
-header h1 {
-  padding: 5px;
+.menu-navegacion ul {
+  /*ORDEN*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
-  text-shadow: 1px 1px 2px #4d82bc;
-  text-align: center;
-  font-size: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*ENLACES DEL MENU*/
+.menu-navegacion a {
+  text-decoration: none;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #fdfd96;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/*ENLACES DEL MENU PULSADOS*/
+.menu-navegacion a:hover {
+  color: #f0f07c;
+  text-shadow: 1px 1px 2px #4d82bc;
+}
+
+/*MENU HAMBURGESA*/
+.menu-toggle-input {
+  display: none;
+}
+
+.menu-toggle-label {
+  background-color: #84b6f4;
+  border: none;
+  border-radius: 100%;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(0 4px 5px #00000025);
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-toggle-label:hover {
+  background-color: rgb(70, 128, 191);
+}
+
+/*Cuando la CHECKBOX del menu-toggle-input esta activado se muestra el menu*/
+.menu-toggle-input:checked+.menu-toggle-label+nav {
+  display: block;
+}
+
+/*COLOR DEL BOTÓN ACTIVADO*/
+.menu-toggle-input:checked+.menu-toggle-label {
+  background-color: #f0f07c;
 }
 
 /*FOOTER*/
 footer {
   /*ORDEN*/
   margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
   background-color: #c4dafa;
 
   /*TAMAÑO*/
   width: 100%;
-  height: 10%;
+  height: 190px;
+
+  padding: 20px;
+  /*Ajusta la forma en la que el navegador calcula el tamaño de el elementos*/
+  box-sizing: border-box;
+}
+
+/*FOOTER*/
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/*INFORMACIÓN DE CONTACTO*/
+.contacto-info-container {
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+  /*TAMAÑO*/
+  width: 100%;
+  height: 100px;
+
+  border-radius: 1px;
+  background-color: #84b6f4;
+  color: #ffffff;
+
+  filter: drop-shadow(0 5px 5px #0000203c);
+}
+
+/*TEXTO CONTACTO*/
+.contacto-info-container ul {
+  font-size: 12px;
+  padding-left: 25px;
+}
+
+/*TEXTO CONTACTO*/
+.contacto-info-container a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*BOTÓN DE IR AL INICIO*/
+#irInicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*TAMAÑO*/
+  width: 80px;
+  height: 30px;
+
+  text-decoration: none;
+  text-align: center;
+
+  background-color: #f0f07c;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  filter: drop-shadow(0 2px 4px #0000203c);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/*BOTÓN DE IR AL INICIO PULSADO*/
+#irInicio:hover {
+  transform: scale(1.05);
+  background-color: #fdfd96;
+}
+
+/*ESTILOS TABLET*/
+@media (min-width: 766px) {
+  header {
+    gap: 50px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+
+  }
+
+  /*HEADER*/
+  .menu-toggle-label {
+    display: none;
+  }
+
+  .menu-navegacion nav {
+    /*ORDEN*/
+    display: block;
+    /*Con esta regla volvemos a colocar el NAV en el header*/
+    position: static;
+    /*DECORACIÓN*/
+    background-color: transparent;
+    border: none;
+  }
+
+  .menu-navegacion ul {
+    /*ORDEN*/
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .menu-navegacion a {
+    background-color: #84b6f4;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .menu-navegacion a:hover {
+    padding: 5px 10px;
+
+    background-color: #4d90e2;
+    border-radius: 5px;
+  }
+
+  /*TITULO PAGINA NO SE MUESTRA*/
+  #current-page-title {
+    display: none;
+  }
+
+  /*FOOTER*/
+  footer {
+    gap: 50px;
+  }
+
+  .footer-info {
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .contacto-info-container {
+    /*TAMAÑO*/
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .contacto-info-container ul {
+    font-size: 19px;
+  }
+
+  .contacto-info-container a {
+    font-size: 17px;
+  }
+
+  #irInicio {
+    font-size: 20px;
+    /*TAMAÑO*/
+    width: 150px;
+    height: 50px;
+  }
+
 }
