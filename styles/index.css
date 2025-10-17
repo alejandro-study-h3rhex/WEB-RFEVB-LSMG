@@ -1,0 +1,287 @@
+#pagina-principal-contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+/*SECCIÓN PRINCIPAL DE EL CONTENIDO DE LA PAGINA*/
+#sección-principal{
+    /*Centra el contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+#noticia-principal-article{
+    /*Centra todo el texto de los artículos*/
+    text-align: center;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+/*TITULO Y IMAGEN NOTICIA DESTACA*/
+.cabecera-noticia{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cabecera-noticia img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+}
+.cabecera-noticia h3{
+    /*Posición absoluta respecto al contenedor gracias a esto no ocupa espacio*/
+    position: absolute;
+    z-index: 1;
+    /*Mantiene el texto en el fondo de la imagen */
+    bottom: -15px;
+    left: 0;
+
+    width: 100%;
+    /* === ESTILOS VISUALES Y DE LECTURA === */
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    background: rgba(22, 22, 22, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    /* Asegura que el texto no se extienda más allá del ancho */
+    box-sizing: border-box;
+}
+/*CUERPO NOTICIA*/
+.cuerpo-noticia p{
+    margin: 0;
+    padding: 10px;
+    background: #84b6f4;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 3px 4px rgba(22, 22, 22, 0.50);
+}
+
+/*IMÁGENES DESTACADAS*/
+.imágenes-destacadas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+
+    /*TAMAÑO CONTENEDOR*/
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    min-height:  90px;
+
+    background-color: #84b6f4;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(22, 22, 22, 0.50);
+}
+.imágenes-destacadas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*CLASSIFICATION - TABLA*/
+/*Contenedor de la tabla/s*/
+.clasificaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*REGLAS PARA EL TEXTO*/
+    text-align: center;
+    font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+
+    width: 90%;
+    padding: 10px;
+    /*añade un margen abajo*/
+    margin-bottom: 20px;
+
+    overflow: hidden;
+}
+.clasificaciones table{
+    /*añade un margen a los lados*/
+    margin-inline-start: 4px;
+    /*Limpia los bordes dobles */
+    border-collapse: collapse;
+    box-shadow: 0 3px 4px rgba(22, 22, 22, 0.20);
+}
+/*TITULO TABLA*/
+.clasificaciones .tituloTabla{
+    padding: 10px;
+    background: #4d82bc;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.clasificaciones th{
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.clasificaciones thead tr{
+    background: #70a4e5;
+    color: white;
+}
+.clasificaciones tbody td{
+    background: #c4dafa;
+    color: #161616;
+    padding: 3px 2px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+/*EFECTO AFECTA A TODA LA LINEA*/
+.clasificaciones tbody tr:hover td {
+    background-color: #88ade7; /* Un color ligeramente más claro al pasar el ratón */
+}
+
+/*POSICIÓN EN LA CLASIFICACIÓN*/
+.clasificaciones .clasificación-posic{
+    background: #fdfd96;
+    box-shadow: inset -2px 0 3px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+
+}
+/*FRAGMENTO HISTORIA*/
+.fragmento-historia-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    padding: 7px;
+    border-radius: 15px;
+    background-color: #c4dafa;
+    width: 85%;
+    height: 340px;
+}
+
+.fragmento-historia-article h4{
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #4d82bc;
+}
+.fragmento-historia-article p{
+    text-align: justify;
+    width: 100%;
+}
+.fragmento-historia-article a{
+    background: #fdfd96;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.fragmento-historia-article a:hover{
+    background: #eeee69;
+}
+/*LATERAL DE LA PAGINA (EN MOBILES ESTA ABAJO)
+    PATROCINADORES Y FRAGMENTO HISTORIA
+*/
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+#patrocinadores{
+    display: grid;
+    /*Columnas infinitas de 2*/
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    margin: 10px;
+
+    width: 75%;
+    border-radius: 10px;
+
+    background-color: #e0dbd0;
+}
+
+/*TABLETS, LAPTOP, DESKTOP>766*/
+@media (min-width: 766px) and (max-width: 1023px){
+    #noticia-principal-article{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    /*IMÁGENES DESTACADAS*/
+    .imágenes-destacadas{
+        /*TAMAÑO CONTENEDOR*/
+        max-width: 600px;
+        min-height: 160px;
+    }
+
+    /*TABLA CLASIFICACION*/
+    .clasificaciones{
+        width: 100%;
+    }
+
+    .clasificaciones .tituloTabla{
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .clasificaciones th{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .clasificaciones tbody td{
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    /*TABLA CLASIFICACION*/
+    .fragmento-historia-article {
+        width: 100%;
+        max-width: 700px;
+    }
+    .fragmento-historia-article h4{
+        letter-spacing: 2px;
+    }
+    .fragmento-historia-article p{
+        font-size: 16px;
+    }
+
+    aside{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px){
+    #noticia-principal-article {
+        width: 50%;
+    }
+    /*
+        Pasar el aside de abajo a la
+        grid-template-columns: 2fr 1fr; (el tamaño de las columnas se define con los fr)
+    */
+    #pagina-principal-contenido{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+

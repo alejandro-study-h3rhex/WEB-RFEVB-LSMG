@@ -1,3 +1,8 @@
+/*ANIMACIONES*/
+
+/*ANIMACIÓN ESCALA*/
+
+
 @font-face {
   font-family: "Lexend";
   src: url("../assets/font/Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
@@ -76,7 +81,7 @@ a {
   font-weight: 400;
 }
 
-/*ESTILOS HEADER*/
+/*ESTILOS HEADER - CABECERA*/
 header {
   position: relative;
 
@@ -88,8 +93,8 @@ header {
   align-items: center;
   gap: 10px;
   padding: 3px;
-
-  margin: 0;
+  margin-bottom: 10px;
+    z-index: 2;
 
   /*BORDE*/
   border-bottom-left-radius: 10px;
@@ -116,45 +121,44 @@ header h1 {
 }
 
 #current-page-title {
-  color: #161616;
-  background-color: #84b6f4;
-  border-radius: 3px;
-  padding: 5px;
+    color: #161616;
+    background-color: #84b6f4;
 
-  font-size: 0.8rem;
-  text-align: center;
-  text-transform: uppercase;
+    border-radius: 3px;
+    padding: 10px;
 
-  filter: drop-shadow(0 4px 5px #00000025);
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    filter: drop-shadow(0 4px 5px #00000025);
 }
 
 /*MENU NAVEGACIÓN HEADER*/
 .menu-navegacion {
-  /*ORDEN*/
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
+      /*ORDEN*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
 }
 
 .menu-navegacion nav {
-  position: absolute;
-  display: none;
-  top: 110%;
-  left: 20vw;
-  z-index: 10;
+    position: absolute;
+    display: none;
+    top: 110%;
+    left: 20vw;
+    /*TAMAÑO*/
+    width: 60%;
+    height: auto;
 
-  /*TAMAÑO*/
-  width: 60%;
-  height: auto;
-
-  /*COLORES*/
-  background-color: #84b6f4;
-  border: 2px solid #4d82bc;
-  border-radius: 10px;
-  padding: 10px;
-  filter: drop-shadow(0 10px 4px #00000030);
+    /*COLORES*/
+    background-color: #84b6f4;
+    border: 2px solid #4d82bc;
+    border-radius: 10px;
+    padding: 10px;
+    filter: drop-shadow(0 10px 4px #00000030);
 }
 
 .menu-navegacion ul {
@@ -191,55 +195,65 @@ header h1 {
 }
 
 .menu-toggle-label {
-  background-color: #84b6f4;
-  border: none;
-  border-radius: 100%;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
+    background-color: #84b6f4;
+    border: none;
+    border-radius: 100%;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
 
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-  filter: drop-shadow(0 4px 5px #00000025);
 
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    filter: drop-shadow(0 4px 5px #00000025);
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .menu-toggle-label:hover {
-  background-color: rgb(70, 128, 191);
+    background-color: rgb(70, 128, 191);
 }
 
 /*Cuando la CHECKBOX del menu-toggle-input esta activado se muestra el menu*/
 .menu-toggle-input:checked+.menu-toggle-label+nav {
-  display: block;
+    display: block;
 }
 
 /*COLOR DEL BOTÓN ACTIVADO*/
 .menu-toggle-input:checked+.menu-toggle-label {
-  background-color: #f0f07c;
+    background-color: #f0f07c;
 }
 
-/*FOOTER*/
+/*MAIN - CONTENIDO PRINCIPAL*/
+main{
+    /*Centra el contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+/*FOOTER - PIE DE PAGINA*/
 footer {
-  /*ORDEN*/
-  margin-top: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-
-  background-color: #c4dafa;
-
-  /*TAMAÑO*/
-  width: 100%;
-  height: 190px;
-
-  padding: 20px;
-  /*Ajusta la forma en la que el navegador calcula el tamaño de el elementos*/
-  box-sizing: border-box;
+    /*ORDEN*/
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+    background-color: #c4dafa;
+    /*TAMAÑO*/
+    width: 100%;
+    height: 190px;
+    padding: 20px;
+    /*Ajusta la forma en la que el navegador calcula el tamaño de el elementos*/
+    box-sizing: border-box;
 }
 
-/*FOOTER*/
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -305,7 +319,7 @@ footer {
   background-color: #fdfd96;
 }
 
-/*ESTILOS TABLET*/
+/*ESTILOS TABLET Y DE MAS DISPOSITIVOS*/
 @media (min-width: 766px) {
   header {
     gap: 50px;
@@ -387,5 +401,4 @@ footer {
     width: 150px;
     height: 50px;
   }
-
 }
