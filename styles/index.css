@@ -1,0 +1,50 @@
+main article{
+    /*Centra todo el texto de los artículos*/
+    text-align: center;
+    max-width: 80%;
+}
+
+/*TITULO Y IMAGEN NOTICIA DESTACA*/
+.cabecera-noticia{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.cabecera-noticia img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+}
+.cabecera-noticia h3{
+    /*Posición absoluta respecto al contenedor gracias a esto no ocupa espacio*/
+    position: absolute;
+    /*Mantiene el texto en el fondo de la imagen */
+    bottom: -15px;
+    left: 0;
+
+    width: 100%;
+    /* === ESTILOS VISUALES Y DE LECTURA === */
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    background: rgba(22, 22, 22, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    /* Asegura que el texto no se extienda más allá del ancho */
+    box-sizing: border-box;
+}
+
+/*CUERPO NOTICIA*/
+.cuerpo-noticia p{
+    margin: 0;
+    padding: 10px;
+    background: #84b6f4;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    filter: drop-shadow(0 3px 4px rgba(22, 22, 22, 0.50));
+}
