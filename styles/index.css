@@ -1,7 +1,18 @@
-main article{
+#sección-principal{
+    /*Centra el contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+#sección-principal article{
     /*Centra todo el texto de los artículos*/
     text-align: center;
-    max-width: 90%;
+    max-width: 80%;
     margin-bottom: 20px;
 }
 
@@ -12,7 +23,6 @@ main article{
     flex-direction: column;
     width: 100%;
 }
-
 .cabecera-noticia img{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -37,7 +47,6 @@ main article{
     /* Asegura que el texto no se extienda más allá del ancho */
     box-sizing: border-box;
 }
-
 /*CUERPO NOTICIA*/
 .cuerpo-noticia p{
     margin: 0;
@@ -57,7 +66,7 @@ main article{
     padding: 10px;
 
     /*TAMAÑO CONTENEDOR*/
-    width: 90%;
+    width: 80%;
     max-width: 500px;
     height: auto;
     min-height:  90px;
@@ -72,7 +81,8 @@ main article{
     object-fit: cover;
 }
 
-/*CLASIFIACIONES*/
+/*CLASSIFICATION - TABLA*/
+/*Contenedor de la tabla/s*/
 .clasificaciones{
     display: flex;
     flex-direction: column;
@@ -84,52 +94,81 @@ main article{
     font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 12px;
 
-    width: 100%;
+    width: 90%;
     padding: 10px;
+    /*añade un margen abajo*/
+    margin-bottom: 20px;
 
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .clasificaciones table{
+    /*añade un margen a los lados*/
+    margin-inline-start: 4px;
     /*Limpia los bordes dobles */
     border-collapse: collapse;
+    box-shadow: 0 3px 4px rgba(22, 22, 22, 0.20);
 }
-
 /*TITULO TABLA*/
 .clasificaciones .tituloTabla{
+    padding: 10px;
     background: #4d82bc;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
-
-/*POSICION EN LA CLASIFICACION*/
+/*POSICIÓN EN LA CLASIFICACIÓN*/
 .clasificaciones .clasificación-posic{
     background: #fdfd96;
     box-shadow: inset -2px 0 3px rgba(0, 0, 0, 0.08);
     font-weight: 700;
 }
-
 .clasificaciones th{
     text-align: center;
-    padding: 2px 2px;
     border: none;
     font-weight: 600;
+    padding: 2px;
 }
-
 .clasificaciones thead tr{
     background: #70a4e5;
     color: white;
 }
-
 .clasificaciones tbody td{
     background: #c4dafa;
     color: #161616;
     padding: 3px 2px;
-    transition: background-color 0.3s ease;
     border: none;
-    margin: 0;
+    transition: background-color 0.3s ease;
 }
-
-/*AFECTA A TODA LA LINEA*/
+/*EFECTO AFECTA A TODA LA LINEA*/
 .clasificaciones tbody tr:hover td {
     background-color: #88ade7; /* Un color ligeramente más claro al pasar el ratón */
+}
+
+/*FRAGMENTO HISTORIA*/
+.fragmento-historia{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: #c4dafa;
+    height: 340px;
+}
+
+.fragmento-historia h4{
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    color: #4d82bc;
+}
+
+.fragmento-historia a{
+    background: #fdfd96;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.fragmento-historia a:hover{
+    background: #eeee69;
 }
