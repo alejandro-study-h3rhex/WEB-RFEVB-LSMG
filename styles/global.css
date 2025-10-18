@@ -2,7 +2,6 @@
 
 /*ANIMACIÓN ESCALA*/
 
-
 @font-face {
   font-family: "Lexend";
   src: url("../assets/font/Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
@@ -18,6 +17,13 @@
     800 - ExtraBold
     900 - Black
   */
+}
+
+html{
+    /*hace que los enlaces internos de
+    scrool sea mas suave por ejemplo el
+    boton en el footer que te manada al inicio de la pagina*/
+    scroll-behavior: smooth;
 }
 
 body {
@@ -79,6 +85,11 @@ p,
 a {
   font-size: 14px;
   font-weight: 400;
+}
+/*ESTILO POR DEFECTO DE LOS ENLACES*/
+a{
+    text-decoration: none;
+    cursor: pointer ;
 }
 
 /*ESTILOS HEADER - CABECERA*/
