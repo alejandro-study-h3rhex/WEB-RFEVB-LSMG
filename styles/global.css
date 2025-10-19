@@ -142,6 +142,7 @@ header h1 {
     /*COLOR TRANSPARENTE*/
     color: transparent;
     /*Texto con gradiente*/
+    background: rgba(250, 250, 105, 1); /*Si el gradiente no esta soportado por el navegador se vera este fondo*/
     background: linear-gradient(180deg,rgba(250, 250, 52, 1) 0%, rgba(250, 250, 105, 1) 12%, rgba(255, 255, 184, 1) 45%);
     background-clip: text;
 }
