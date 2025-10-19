@@ -3,317 +3,348 @@
 <html lang="es">
 
 <head>
-  <!--CONFIGURACIÓN DE LA PAGINA-->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--ICONO DE LA PAGINA-->
-  <link rel="icon" href="./assets/favicon/favicon.ico" />
-  <!--TITULO DE LA PAGINA-->
-  <title>RFEVB | Inicio</title>
+    <!--CONFIGURACIÓN DE LA PAGINA-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--ICONO DE LA PAGINA-->
+    <link rel="icon" href="./assets/favicon/favicon.ico"/>
+    <!--TITULO DE LA PAGINA-->
+    <title>RFEVB | Inicio</title>
 
-  <!-- METADATOS -->
-  <meta name="description"
-    content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la información de tus equipos." />
+    <!-- METADATOS -->
+    <meta name="description"
+          content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la información de tus equipos."/>
 
-  <meta name="application-name" content="Real Federación de Voleibol" />
-  <meta name="author" content="Real Federación Española de Voleibol" />
+    <meta name="application-name" content="Real Federación de Voleibol"/>
+    <meta name="author" content="Real Federación Española de Voleibol"/>
 
-  <!--LINK HOJAS DE ESTILO (CSS)-->
+    <!--LINK HOJAS DE ESTILO (CSS)-->
 
-  <!--CSS ESPECIFICO DE TODA LA PAGINA-->
-  <link rel="stylesheet" href="./styles/index.css" hreflang="CSS" />
-  <!--CSS GLOBAL DE TODA LA WEB-->
-  <link rel="stylesheet" href="./styles/global.css" hreflang="CSS" />
+    <!--CSS ESPECIFICO DE TODA LA PAGINA-->
+    <link rel="stylesheet" href="./styles/index.css" hreflang="CSS"/>
+    <!--CSS GLOBAL DE TODA LA WEB-->
+    <link rel="stylesheet" href="./styles/global.css" hreflang="CSS"/>
 </head>
 
 <body id="app">
-  <!--HEADER-->
-  <header>
+<!--HEADER-->
+<header>
     <!--LOGO DE LA FEDERACIÓN-->
     <div class="logo-federación">
-      <img src="assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
-           title="Real Federación Española de Voleibol" loading="eager" width="63" height="119" />
+        <img src="assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
+             title="Real Federación Española de Voleibol" loading="eager" width="63" height="119"/>
     </div>
     <div class="header-content">
-      <!--TITULO DEL HEADER-->
-      <h1>Real Federación Española de Voleibol</h1>
-      <!--MENU DE NAVEGACION-->
-      <div class="menu-navegacion">
-        <!--TITULO DE PAGINA ACTUAL-->
-        <h2 id="current-page-title">Pagina Principal</h2>
-        <!--MENU HAMBURGUESA-->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
-        <label for="menu-toggle" class="menu-toggle-label">☰</label>
-        <!--MENÚ DESPLEGABLE-->
-        <nav>
-          <ul>
-            <li>
-              <a href="#" title="Inicio" target="_self">Inicio</a>
-            </li>
-            <li>
-              <a href="./sub-paginas/liga.html" title="Liga" target="_self">Liga</a>
-            </li>
-            <li>
-              <a href="./sub-paginas/jornadas.html" title="Jornadas" target="_self">Jornadas</a>
-            </li>
-            <li>
-              <a href="./sub-paginas/noticias.html" title="Noticias" target="_self">Noticias</a>
-            </li>
-            <li>
-              <a href="./sub-paginas/historia.html" title="Historia" target="_self">Historia</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <!--TITULO DEL HEADER-->
+        <h1>Real Federación Española de Voleibol</h1>
+        <!--MENU DE NAVEGACION-->
+        <div class="menu-navegacion">
+            <!--TITULO DE PAGINA ACTUAL-->
+            <h2 id="current-page-title">Pagina Principal</h2>
+            <!--MENU HAMBURGUESA-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input"/>
+            <label for="menu-toggle" class="menu-toggle-label">☰</label>
+            <!--MENÚ DESPLEGABLE-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" title="Inicio" target="_self">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./sub-paginas/liga.html" title="Liga" target="_self">Liga</a>
+                    </li>
+                    <li>
+                        <a href="./sub-paginas/jornadas.html" title="Jornadas" target="_self">Jornadas</a>
+                    </li>
+                    <li>
+                        <a href="./sub-paginas/noticias.html" title="Noticias" target="_self">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="./sub-paginas/historia.html" title="Historia" target="_self">Historia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </header>
-  <!--CONTENIDO PRINCIPAL-->
-  <main id="pagina-principal-contenido">
-      <div id="sección-principal">
-          <!--NOTICIA DESTACADA-->
-          <article id="noticia-principal-article">
-                <section class="cabecera-noticia">
-                    <img
-                            src="assets/img/Noticias/Noticia-Masc.jpg"
-                            alt="Noticia Destacada"
-                            title="Alejandro Huerta y Adrián Gavira acceden a la fase de grupos del Elite16 de Newport Beach"
-                            loading="eager"
-                            width="310"
-                            height="181"
-                    />
-                    <h3>
-                        Alejandro Huerta y Adrián Gavira acceden a la fase de grupos del Elite16 de Newport Beach
-                    </h3>
-                </section>
-                <section class="cuerpo-noticia">
-                    <p>
-                        Alejandro Huerta y Adrián Gavira superaron con solvencia la ronda clasificatoria del Beach Pro Tour Elite16 de Newport Beach, Estados Unidos, imponiéndose a checos y estadounidenses, y formarán parte del grupo C del torneo.
-                    </p>
-                </section>
-            </article>
-          <section class="imágenes-destacadas">
+</header>
+<!--CONTENIDO PRINCIPAL-->
+<main id="pagina-principal-contenido">
+    <div id="sección-principal">
+        <!--NOTICIA DESTACADA-->
+        <article id="noticia-principal-article">
+            <!--Loading Edger hace que la imagen cargue rápido, esto es necesario dado que es una imagen que se va a ver desde el principio-->
+            <section class="cabecera-noticia">
                 <img
+                        src="assets/img/Noticias/Noticia-Masc.jpg"
+                        alt="Noticia Destacada"
+                        title="Alejandro Huerta y Adrián Gavira acceden a la fase de grupos del Elite16 de Newport Beach"
+                        loading="eager"
+                        width="310"
+                        height="181"
+                />
+                <h3>
+                    Alejandro Huerta y Adrián Gavira acceden a la fase de grupos del Elite16 de Newport Beach
+                </h3>
+            </section>
+            <section class="cuerpo-noticia">
+                <p>
+                    Alejandro Huerta y Adrián Gavira superaron con solvencia la ronda clasificatoria del Beach Pro Tour
+                    Elite16 de Newport Beach, Estados Unidos, imponiéndose a checos y estadounidenses, y formarán parte
+                    del grupo C del torneo.
+                </p>
+            </section>
+        </article>
+        <!--IMÁGENES DESTACADAS-->
+        <section class="imágenes-destacadas">
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
                     src="assets/img/PaginaPrincipal/imagen-destacada1.jpg"
                     alt="Imagen Destacada - 1"
                     title="Imagen Destacada - 1"
                     loading="lazy"
                     width="90"
                     height="90"
-                />
-                <img
+            />
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
                     src="assets/img/PaginaPrincipal/imagen-destacada2.jpeg"
-                    alt="Imagen Destacada - 1"
-                    title="Imagen Destacada - 1"
+                    alt="Imagen Destacada - 2"
+                    title="Imagen Destacada - 2"
                     loading="lazy"
                     width="90"
                     height="90"
-                />
-                <img
+            />
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
                     src="assets/img/PaginaPrincipal/imagen-destacada3.jpg"
-                    alt="Imagen Destacada - 1"
-                    title="Imagen Destacada - 1"
+                    alt="Imagen Destacada - 3"
+                    title="Imagen Destacada - 3"
                     loading="lazy"
                     width="90"
                     height="90"
-                />
-          </section>
-          <!--TABLA CLASIFICACÍONES-->
-          <section class="clasificaciones">
-              <!--CLASIFICACIÓN MASCULINA-->
-              <div>
-                  <table>
-                      <thead>
-                      <tr>
-                          <th class="tituloTabla" colspan="10">CLASIFICACIÓN</th>
-                      </tr>
-                      <tr>
-                          <th>POSIC</th>
-                          <th>EQUIPO</th>
-                          <th>PTOS</th>
-                          <th>P.J</th>
-                          <th>P.G</th>
-                          <th>P.P</th>
-                          <th>S.F</th>
-                          <th>S.C</th>
-                          <th>T.A</th>
-                          <th>T.C</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                          <td class="clasificación-posic">1</td>
-                          <td>CV Zaragoza</td>
-                          <td>28</td>
-                          <td>10</td>
-                          <td>9</td>
-                          <td>1</td>
-                          <td>29</td>
-                          <td>7</td>
-                          <td>885</td>
-                          <td>750</td>
-                      </tr>
-                      <tr>
-                          <td class="clasificación-posic">2</td>
-                          <td>CV San Fernando</td>
-                          <td>22</td>
-                          <td>10</td>
-                          <td>8</td>
-                          <td>2</td>
-                          <td>26</td>
-                          <td>12</td>
-                          <td>890</td>
-                          <td>815</td>
-                      </tr>
-                      <tr>
-                          <td class="clasificación-posic">3</td>
-                          <td>Valladolid CV</td>
-                          <td>18</td>
-                          <td>10</td>
-                          <td>6</td>
-                          <td>4</td>
-                          <td>21</td>
-                          <td>16</td>
-                          <td>845</td>
-                          <td>830</td>
-                      </tr>
-                      <tr>
-                          <td class="clasificación-posic" >4</td>
-                          <td>CV Torrelavega</td>
-                          <td>12</td>
-                          <td>10</td>
-                          <td>4</td>
-                          <td>6</td>
-                          <td>15</td>
-                          <td>22</td>
-                          <td>805</td>
-                          <td>860</td>
-                      </tr>
-                      <tr>
-                          <td class="clasificación-posic" >5</td>
-                          <td>CV Palma</td>
-                          <td>8</td>
-                          <td>10</td>
-                          <td>2</td>
-                          <td>8</td>
-                          <td>12</td>
-                          <td>26</td>
-                          <td>790</td>
-                          <td>895</td>
-                      </tr>
-                      <tr>
-                          <td class="clasificación-posic" >6</td>
-                          <td>CV Rivas</td>
-                          <td>2</td>
-                          <td>10</td>
-                          <td>1</td>
-                          <td>9</td>
-                          <td>7</td>
-                          <td>29</td>
-                          <td>710</td>
-                          <td>875</td>
-                      </tr>
-                      </tbody>
-                  </table>
-              </div>
-          </section>
+            />
+        </section>
+        <!--TABLA CLASIFICACÍONES-->
+        <section class="clasificaciones">
+            <!--CLASIFICACIÓN MASCULINA-->
+            <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="tituloTabla" colspan="10">CLASIFICACIÓN</th>
+                    </tr>
+                    <tr>
+                        <th>POSIC</th>
+                        <th>EQUIPO</th>
+                        <th>PTOS</th>
+                        <th>P.J</th>
+                        <th>P.G</th>
+                        <th>P.P</th>
+                        <th>S.F</th>
+                        <th>S.C</th>
+                        <th>T.A</th>
+                        <th>T.C</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="clasificación-posic">1</td>
+                        <td>CV Zaragoza</td>
+                        <td>28</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>1</td>
+                        <td>29</td>
+                        <td>7</td>
+                        <td>885</td>
+                        <td>750</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">2</td>
+                        <td>CV San Fernando</td>
+                        <td>22</td>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>26</td>
+                        <td>12</td>
+                        <td>890</td>
+                        <td>815</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">3</td>
+                        <td>Valladolid CV</td>
+                        <td>18</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>21</td>
+                        <td>16</td>
+                        <td>845</td>
+                        <td>830</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">4</td>
+                        <td>CV Torrelavega</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>15</td>
+                        <td>22</td>
+                        <td>805</td>
+                        <td>860</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">5</td>
+                        <td>CV Palma</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>790</td>
+                        <td>895</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">6</td>
+                        <td>CV Rivas</td>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>29</td>
+                        <td>710</td>
+                        <td>875</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-          </div>
-      <aside>
-          <!--FRAGMENTO HISTORIA-->
-          <article class="fragmento-historia-article">
-              <section>
-                  <h4>Nuestra Pasión, Nuestra Historia</h4>
-              </section>
-              <section>
-                  <p>
-                      Desde su fundación en 1960, la Real Federación Española de Voleibol
-                      ha sido el corazón del voleibol en nuestro país.
-                      Nacimos con la misión de organizar y promover un
-                      deporte que une a miles de personas, desde la cantera hasta la élite de nuestras selecciones nacionales.
-                  </p>
-              </section>
-              <section>
-                  <a href="./sub-paginas/historia.html/">Leer Mas</a>
-              </section>
-          </article>
-          <section id="patrocinadores">
-              <img
-                      src="./assets/img/Patrocinadores/logo_CSD.png"
-                      title="Patrocinador CSD"
-                      alt="Patrocinador CSD"
-                      loading="lazy"
-                      width="100"
-                      height="50"
-              />
-              <img
-                      src="./assets/img/Patrocinadores/logo-loterias.jpg"
-                      title="Patrocinador CSD"
-                      alt="Patrocinador CSD"
-                      loading="lazy"
-                      width="80"
-                      height="80"
-              />
-              <img
-                      src="./assets/img/Patrocinadores/logo_iberdrola.jpg"
-                      title="Patrocinador CSD"
-                      alt="Patrocinador CSD"
-                      loading="lazy"
-                      width="100"
-                      height="50"
-              />
-              <img
-                      src="./assets/img/Patrocinadores/logo_Luanvi.jpg"
-                      title="Patrocinador CSD"
-                      alt="Patrocinador CSD"
-                      loading="lazy"
-                      width="100"
-                      height="50"
-              />
-              <img
-                      src="./assets/img/Patrocinadores/logo_Molten.jpg"
-                      title="Patrocinador CSD"
-                      alt="Patrocinador CSD"
-                      loading="lazy"
-                      width="100"
-                      height="50"
-              />
-              <img
-                      src="./assets/img/Patrocinadores/logo_cyl_esvida.jpg"
-                      title="Patrocinador CSD"
-                      alt="Patrocinador CSD"
-                      loading="lazy"
-                      width="100"
-                      height="50"
-              />
-          </section>
-      </aside>
-  </main>
+    </div>
+    <aside>
+        <!--FRAGMENTO HISTORIA-->
+        <article class="fragmento-historia-article">
+            <section>
+                <h4>Nuestra Pasión, Nuestra Historia</h4>
+            </section>
+            <section>
+                <p>
+                    Desde su fundación en 1960, la Real Federación Española de Voleibol
+                    ha sido el corazón del voleibol en nuestro país.
+                    Nacimos con la misión de organizar y promover un
+                    deporte que une a miles de personas, desde la cantera hasta la élite de nuestras selecciones
+                    nacionales.
+                </p>
+            </section>
+            <section>
+                <a href="./sub-paginas/historia.html" title="Historia" target="_self">Leer Mas</a>
+            </section>
+        </article>
+        <section id="patrocinadores">
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
+                    src="./assets/img/Patrocinadores/logo_CSD.png"
+                    title="Patrocinador CSD"
+                    alt="Patrocinador CSD"
+                    loading="lazy"
+                    width="100"
+                    height="50"
+            />
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
+                    src="./assets/img/Patrocinadores/logo-loterias.jpg"
+                    title="Patrocinador CSD"
+                    alt="Patrocinador CSD"
+                    loading="lazy"
+                    width="80"
+                    height="80"
+            />
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
+                    src="./assets/img/Patrocinadores/logo_iberdrola.jpg"
+                    title="Patrocinador CSD"
+                    alt="Patrocinador CSD"
+                    loading="lazy"
+                    width="100"
+                    height="50"
+            />
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
+                    src="./assets/img/Patrocinadores/logo_Luanvi.jpg"
+                    title="Patrocinador CSD"
+                    alt="Patrocinador CSD"
+                    loading="lazy"
+                    width="100"
+                    height="50"
+            />
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
+                    src="./assets/img/Patrocinadores/logo_Molten.jpg"
+                    title="Patrocinador CSD"
+                    alt="Patrocinador CSD"
+                    loading="lazy"
+                    width="100"
+                    height="50"
+            />
+            <!--Loading Lazy hace que la imagen tarde más en cargar, pero mejora el rendimiento de la página-->
+            <img
+                    src="./assets/img/Patrocinadores/logo_cyl_esvida.jpg"
+                    title="Patrocinador CSD"
+                    alt="Patrocinador CSD"
+                    loading="lazy"
+                    width="100"
+                    height="50"
+            />
+        </section>
+    </aside>
+</main>
 
-  <!--FOOTER-->
-  <footer>
+<!--FOOTER-->
+<footer>
     <!--LOGO DE LA FEDERACIÓN-->
     <div class="logo-federación">
-      <img src="assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
-           title="Real Federación Española de Voleibol" loading="eager" width="63" height="119" />
+        <img src="assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
+             title="Real Federación Española de Voleibol" loading="eager" width="63" height="119"/>
     </div>
     <div class="footer-info">
-      <!--INFORMACIÓN DE CONTACTO-->
-      <div class="contacto-info-container">
-        <ul>
-          <li><b>Dirección:</b> Paseo Imperial 6 piso 3º A</li>
-          <li>28005 - Madrid</li>
-          <li>
-            <b>Teléfono: </b><a href="tel:+34917014090">+34917014090</a>.
-          </li>
-          <li>
-            <b>Correo: </b><a href="mailto:correo@rfevb.com" title="correo@rfevb.com">correo@rfevb.com</a>
-          </li>
-        </ul>
-      </div>
-      <!--BOTÓN PARA VOLVER AL INICIO-->
-      <a href="#" target="_top" id="irInicio" title="Ir a inicio">Inicio</a>
-    </div>
-  </footer>
-</body>
+        <!--INFORMACIÓN DE CONTACTO-->
+        <div class="contacto-info-container">
+            <ul>
+                <li><b>Dirección:</b> Paseo Imperial 6 piso 3º A</li>
+                <li>28005 - Madrid</li>
+                <li>
+                    <b>Teléfono: </b><a href="tel:+34917014090">+34917014090</a>.
+                </li>
+                <li>
+                    <b>Correo: </b><a href="mailto:correo@rfevb.com" title="correo@rfevb.com">correo@rfevb.com</a>
+                </li>
+            </ul>
+        </div>
 
+        <div id="links-externos-footer">
+            <!--Google Maps-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.96225465472!2d-3.720655925018491!3d40.4096869560695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227df2c900001%3A0xd7fac6b4486d66b3!2sP.%C2%BA%20Imperial%2C%206%2C%20piso%203%C2%BA%20A%2C%20Arganzuela%2C%2028005%20Madrid!5e0!3m2!1ses!2ses!4v1760871312823!5m2!1ses!2ses"
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--Redes Sociales-->
+            <nav>
+                <a href="https://www.youtube.com/@voleytv" target="_blank" title="Youtube">
+                    <img
+                        src="./assets/img/youtube.svg" alt="Youtube" title="Youtube" width="40" height="40" loading="lazy" class="redes-sociales"/>
+                </a>
+                <a href="https://x.com/RFEVB" target="_blank" title="X">
+                    <img src="./assets/img/twitter.svg" alt="x" title="X" width="40" height="40" loading="lazy" class="redes-sociales"/>
+                </a>
+            </nav>
+        </div>
+
+        <!--BOTÓN PARA VOLVER AL INICIO-->
+        <a href="#" target="_top" id="irInicio" title="Ir a inicio">Inicio</a>
+    </div>
+</footer>
+</body>
 </html>

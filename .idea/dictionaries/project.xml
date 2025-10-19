@@ -2,9 +2,11 @@
   <dictionary name="project">
     <words>
       <w>clasificacion</w>
+      <w>configuracion</w>
       <w>hamburgesa</w>
       <w>navegacion</w>
       <w>posic</w>
+      <w>ptos</w>
     </words>
   </dictionary>
 </component>

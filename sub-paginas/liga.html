@@ -3,305 +3,332 @@
 <html lang="es">
 
 <head>
-  <!--CONFIGURACION DE LA PAGINA-->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--ICONO DE LA PAGINA-->
-  <link rel="icon" href="../assets/favicon/favicon.ico" />
-  <!--TITULO DE LA PAGINA-->
-  <title>RFEVB | Incio</title>
+    <!--CONFIGURACIÓN DE LA PAGINA-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--ICONO DE LA PAGINA-->
+    <link rel="icon" href="../assets/favicon/favicon.ico"/>
+    <!--TITULO DE LA PAGINA-->
+    <title>RFEVB | Liga</title>
 
-  <!-- METADATOS -->
-  <meta name="description"
-    content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la info de tus equipos." />
+    <!-- METADATOS -->
+    <meta name="description"
+          content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la info de tus equipos."/>
 
-  <meta name="application-name" content="Real Federación de Voleibol" />
-  <meta name="author" content="Real Federación Española de Voleibol" />
+    <meta name="application-name" content="Real Federación de Voleibol"/>
+    <meta name="author" content="Real Federación Española de Voleibol"/>
 
-  <!--LINK HOJAS DE ESTILO (CSS)-->
+    <!--LINK HOJAS DE ESTILO (CSS)-->
 
-  <!--CSS ESPECIFICO DE TODA LA PAGINA-->
-  <link rel="stylesheet" href="../styles/liga.css" hreflang="CSS" />
-  <!--CSS GLOBAL DE TODA LA WEB-->
-  <link rel="stylesheet" href="../styles/global.css" hreflang="CSS" />
+    <!--CSS ESPECIFICO DE TODA LA PAGINA-->
+    <link rel="stylesheet" href="../styles/liga.css" hreflang="CSS"/>
+    <!--CSS GLOBAL DE TODA LA WEB-->
+    <link rel="stylesheet" href="../styles/global.css" hreflang="CSS"/>
 </head>
 
 <body id="app">
-  <!--HEADER-->
-  <header>
+<!--HEADER-->
+<header>
     <!--LOGO DE LA FEDERACIÓN-->
     <div class="logo-federación">
-      <img src="../assets/img/logoFederación.png" alt="Logo Real Federacion Española de Voleibol"
-           title="Real Federacion Española de Voleibol" loading="eager" width="56" height="106" />
+        <img src="../assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
+             title="Real Federación Española de Voleibol" loading="eager" width="63" height="119"/>
     </div>
-    <div class="header-content" />
-    <!--TITULO DEL HEADER-->
-    <h1>Real Federación Española de Voleibol</h1>
-    <!--MENU DE NAVEGACION-->
-    <div class="menu-navegacion">
-      <!--TITULO DE PAGINA ACTUAL-->
-      <h2 id="current-page-title">Liga</h2>
-      <!--MENU HAMBURGUESA-->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
-      <label for="menu-toggle" class="menu-toggle-label">☰</label>
-      <!--MENÚ DESPLEGABLE-->
-      <nav hidden>
-        <ul>
-          <li>
-            <a href="../index.html" title="Inicio" target="_self">Inicio</a>
-          </li>
-          <li>
-            <a href="../sub-paginas/liga.html" title="Liga" target="_self">Liga</a>
-          </li>
-          <li>
-            <a href="../sub-paginas/jornadas.html" title="Jornadas" target="_self">Jornadas</a>
-          </li>
-          <li>
-            <a href="../sub-paginas/noticias.html" title="Noticias" target="_self">Noticias</a>
-          </li>
-          <li>
-            <a href="../sub-paginas/historia.html" title="Historia" target="_self">Historia</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="header-content">
+        <!--TITULO DEL HEADER-->
+        <h1>Real Federación Española de Voleibol</h1>
+        <!--MENU DE NAVEGACION-->
+        <div class="menu-navegacion">
+            <!--TITULO DE PAGINA ACTUAL-->
+            <h2 id="current-page-title">Pagina Principal</h2>
+            <!--MENU HAMBURGUESA-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input"/>
+            <label for="menu-toggle" class="menu-toggle-label">☰</label>
+            <!--MENÚ DESPLEGABLE-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html" title="Inicio" target="_self">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Liga" target="_self">Liga</a>
+                    </li>
+                    <li>
+                        <a href="./jornadas.html" title="Jornadas" target="_self">Jornadas</a>
+                    </li>
+                    <li>
+                        <a href="./noticias.html" title="Noticias" target="_self">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="./historia.html" title="Historia" target="_self">Historia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </header>
-  <!--MENÚ DESPLEGABLE DE NAVEGACIÓN-->
-  <main>
+</header>
+<!--MENÚ DESPLEGABLE DE NAVEGACIÓN-->
+<main>
 
     <body>
-      <main>
+    <main>
         <h1>TEMPORADA 2025 - 2026</h1>
         <p class="intro">
-          ¡El Voleibol de élite tiene a sus reyes y reinas! Echa un vistazo a la
-          clasificación oficial de la Superliga (M/F) y ponte al día con quién manda en la pista.
+            ¡El Voleibol de élite tiene a sus reyes y reinas! Echa un vistazo a la
+            clasificación oficial de la Superliga (M/F) y ponte al día con quién manda en la pista.
         </p>
 
         <section class="equipos">
-          <h2>EQUIPOS PRINCIPALES</h2>
-          <ol>
-            <li>CV Zaragoza</li>
-            <li>CV San Fernando</li>
-            <li>Valladolid CV</li>
-            <li>CV Torrelavega</li>
-            <li>CV Palma</li>
-            <li>CV Rivas</li>
-          </ol>
+            <h2>EQUIPOS PRINCIPALES</h2>
+            <ol>
+                <li>CV Zaragoza</li>
+                <li>CV San Fernando</li>
+                <li>Valladolid CV</li>
+                <li>CV Torrelavega</li>
+                <li>CV Palma</li>
+                <li>CV Rivas</li>
+            </ol>
         </section>
 
         <section class="clasificaciones">
-          <div class="tabla">
-            <h2>CLASIFICACIÓN MASCULINA</h2>
-            <div class="tabla-scroll"></div>
-            <table>
-              <tr>
-                <th>POSIC</th>
-                <th>Equipo</th>
-                <th>PTOS</th>
-                <th>P.J</th>
-                <th>P.G</th>
-                <th>P.P</th>
-                <th>S.G</th>
-                <th>S.P</th>
-                <th>T.A</th>
-                <th>T.C</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CV Zaragoza</td>
-                <td>29</td>
-                <td>10</td>
-                <td>10</td>
-                <td>0</td>
-                <td>30</td>
-                <td>4</td>
-                <td>831</td>
-                <td>666</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>CV San Fernando</td>
-                <td>20</td>
-                <td>10</td>
-                <td>7</td>
-                <td>3</td>
-                <td>23</td>
-                <td>13</td>
-                <td>812</td>
-                <td>748</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Valladolid CV</td>
-                <td>18</td>
-                <td>10</td>
-                <td>6</td>
-                <td>4</td>
-                <td>21</td>
-                <td>14</td>
-                <td>798</td>
-                <td>745</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>CV Torrelavega</td>
-                <td>11</td>
-                <td>10</td>
-                <td>4</td>
-                <td>6</td>
-                <td>13</td>
-                <td>20</td>
-                <td>708</td>
-                <td>737</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>CV Palma</td>
-                <td>7</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-                <td>10</td>
-                <td>26</td>
-                <td>713</td>
-                <td>830</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>CV Rivas</td>
-                <td>5</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>7</td>
-                <td>27</td>
-                <td>659</td>
-                <td>795</td>
-              </tr>
-            </table>
-          </div>
-          </div>
+            <div class="tabla">
+                <h2>CLASIFICACIÓN MASCULINA</h2>
+                <div class="tabla-scroll"></div>
+                <table>
+                    <tr>
+                        <th>POSIC</th>
+                        <th>Equipo</th>
+                        <th>PTOS</th>
+                        <th>P.J</th>
+                        <th>P.G</th>
+                        <th>P.P</th>
+                        <th>S.G</th>
+                        <th>S.P</th>
+                        <th>T.A</th>
+                        <th>T.C</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CV Zaragoza</td>
+                        <td>29</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>30</td>
+                        <td>4</td>
+                        <td>831</td>
+                        <td>666</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CV San Fernando</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>23</td>
+                        <td>13</td>
+                        <td>812</td>
+                        <td>748</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Valladolid CV</td>
+                        <td>18</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>21</td>
+                        <td>14</td>
+                        <td>798</td>
+                        <td>745</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CV Torrelavega</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>13</td>
+                        <td>20</td>
+                        <td>708</td>
+                        <td>737</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>CV Palma</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>26</td>
+                        <td>713</td>
+                        <td>830</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>CV Rivas</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>27</td>
+                        <td>659</td>
+                        <td>795</td>
+                    </tr>
+                </table>
+            </div>
 
-          <div class="tabla">
-            <h2>CLASIFICACIÓN FEMENINA</h2>
-            <div class="tabla-scroll"></div>
-            <table>
-              <tr>
-                <th>POSIC</th>
-                <th>Equipo</th>
-                <th>PTOS</th>
-                <th>P.J</th>
-                <th>P.G</th>
-                <th>P.P</th>
-                <th>S.G</th>
-                <th>S.P</th>
-                <th>T.A</th>
-                <th>T.C</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CV Zaragoza</td>
-                <td>29</td>
-                <td>10</td>
-                <td>10</td>
-                <td>0</td>
-                <td>30</td>
-                <td>4</td>
-                <td>831</td>
-                <td>666</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>CV San Fernando</td>
-                <td>20</td>
-                <td>10</td>
-                <td>7</td>
-                <td>3</td>
-                <td>23</td>
-                <td>13</td>
-                <td>812</td>
-                <td>748</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Valladolid CV</td>
-                <td>18</td>
-                <td>10</td>
-                <td>6</td>
-                <td>4</td>
-                <td>21</td>
-                <td>14</td>
-                <td>798</td>
-                <td>745</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>CV Torrelavega</td>
-                <td>11</td>
-                <td>10</td>
-                <td>4</td>
-                <td>6</td>
-                <td>13</td>
-                <td>20</td>
-                <td>708</td>
-                <td>737</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>CV Palma</td>
-                <td>7</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-                <td>10</td>
-                <td>26</td>
-                <td>713</td>
-                <td>830</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>CV Rivas</td>
-                <td>5</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>7</td>
-                <td>27</td>
-                <td>659</td>
-                <td>795</td>
-              </tr>
-            </table>
-          </div>
-          </div>
+            <div class="tabla">
+                <h2>CLASIFICACIÓN FEMENINA</h2>
+                <div class="tabla-scroll"></div>
+                <table>
+                    <tr>
+                        <th>POSIC</th>
+                        <th>Equipo</th>
+                        <th>PTOS</th>
+                        <th>P.J</th>
+                        <th>P.G</th>
+                        <th>P.P</th>
+                        <th>S.G</th>
+                        <th>S.P</th>
+                        <th>T.A</th>
+                        <th>T.C</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CV Zaragoza</td>
+                        <td>29</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>30</td>
+                        <td>4</td>
+                        <td>831</td>
+                        <td>666</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CV San Fernando</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>23</td>
+                        <td>13</td>
+                        <td>812</td>
+                        <td>748</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Valladolid CV</td>
+                        <td>18</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>21</td>
+                        <td>14</td>
+                        <td>798</td>
+                        <td>745</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CV Torrelavega</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>13</td>
+                        <td>20</td>
+                        <td>708</td>
+                        <td>737</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>CV Palma</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>26</td>
+                        <td>713</td>
+                        <td>830</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>CV Rivas</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>27</td>
+                        <td>659</td>
+                        <td>795</td>
+                    </tr>
+                </table>
+            </div>
         </section>
-      </main>
+    </main>
     </body>
-  </main>
-  <!--FOOTER-->
-  <footer>
+</main>
+<!--FOOTER-->
+<footer>
     <!--LOGO DE LA FEDERACIÓN-->
     <div class="logo-federación">
-      <img src="../assets/img/logoFederación.png" alt="Logo Real Federacion Española de Voleibol"
-           title="Real Federacion Española de Voleibol" loading="eager" width="56" height="106" />
+        <img src="../assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
+             title="Real Federación Española de Voleibol" loading="eager" width="63" height="119"/>
     </div>
     <div class="footer-info">
-      <!--INFORMACIÓN DE CONTACTO-->
-      <div class="contacto-info-container">
-        <ul>
-          <li><b>Direccion:</b> Paseo Imperial 6 piso 3º A</li>
-          <li>28005 - Madrid</li>
-          <li>
-            <b>Teléfono: </b><a href="tel:+34917014090">+34917014090</a>.
-          </li>
-          <li>
-            <b>Correo: </b><a href="mailto:correo@rfevb.com" title="correo@rfevb.com">correo@rfevb.com</a>
-          </li>
-        </ul>
-      </div>
-      <!--BOTÓN PARA VOLVER AL INICIO-->
-      <a href="#" target="_top" id="irInicio" title="Ir a inicio">Inicio</a>
+        <!--INFORMACIÓN DE CONTACTO-->
+        <div class="contacto-info-container">
+            <ul>
+                <li><b>Dirección:</b> Paseo Imperial 6 piso 3º A</li>
+                <li>28005 - Madrid</li>
+                <li>
+                    <b>Teléfono: </b><a href="tel:+34917014090">+34917014090</a>.
+                </li>
+                <li>
+                    <b>Correo: </b><a href="mailto:correo@rfevb.com" title="correo@rfevb.com">correo@rfevb.com</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="links-externos-footer">
+            <!--Google Maps-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.96225465472!2d-3.720655925018491!3d40.4096869560695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227df2c900001%3A0xd7fac6b4486d66b3!2sP.%C2%BA%20Imperial%2C%206%2C%20piso%203%C2%BA%20A%2C%20Arganzuela%2C%2028005%20Madrid!5e0!3m2!1ses!2ses!4v1760871312823!5m2!1ses!2ses"
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--Redes Sociales-->
+            <nav>
+                <a href="https://www.youtube.com/@voleytv" target="_blank" title="Youtube">
+                    <img
+                            src="../assets/img/youtube.svg"
+                            alt="Youtube" title="Youtube"
+                            width="40" height="40"
+                            loading="lazy"
+                            class="redes-sociales"
+                    />
+                </a>
+                <a href="https://x.com/RFEVB" target="_blank" title="X">
+                    <img
+                            src="../assets/img/twitter.svg"
+                            alt="x" title="X"
+                            width="40" height="40"
+                            loading="lazy"
+                            class="redes-sociales"
+                    />
+                </a>
+            </nav>
+        </div>
+        <!--BOTÓN PARA VOLVER AL INICIO-->
+        <a href="#" target="_top" id="irInicio" title="Ir a inicio">Inicio</a>
     </div>
-  </footer>
+</footer>
 </body>
 
 </html>

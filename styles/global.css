@@ -2,37 +2,43 @@
 
 /*ANIMACIÓN ESCALA*/
 
-
 @font-face {
-  font-family: "Lexend";
-  src: url("../assets/font/Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
-  /*
-    Weigh: 100 - 900
-    100 - Thin
-    200 - ExtraLight
-    300 - Light
-    400 - Regular
-    500 - Medium
-    600 - SemiBold
-    700 - Bold
-    800 - ExtraBold
-    900 - Black
-  */
+    font-family: "Lexend";
+    src: url("../assets/font/Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
+    /*
+      Weigh: 100 - 900
+      100 - Thin
+      200 - ExtraLight
+      300 - Light
+      400 - Regular
+      500 - Medium
+      600 - SemiBold
+      700 - Bold
+      800 - ExtraBold
+      900 - Black
+    */
+}
+
+html {
+    /*hace que los enlaces internos de
+    scroll sea mas suave por ejemplo el
+    botón en el footer que te manada al inicio de la pagina*/
+    scroll-behavior: smooth;
 }
 
 body {
-  /*ORDEN*/
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  /*TAMAÑO*/
-  width: 100%;
-  min-height: 100vh;
+    /*ORDEN*/
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    /*TAMAÑO*/
+    width: 100%;
+    min-height: 100vh;
 
-  /*OTROS*/
-  overflow-x: hidden;
-  background-color: #eeebe4;
+    /*OTROS*/
+    overflow-x: hidden;
+    background-color: #eeebe4;
 }
 
 /*ESTILOS ESTÁNDAR TEXTO*/
@@ -43,81 +49,89 @@ h4,
 h5,
 p,
 a {
-  font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont,
+    font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
-  color: #161616;
+    color: #161616;
 }
 
 /*TÍTULOS*/
 h1 {
-  color: #4d82bc;
-  font-size: 30px;
+    color: #4d82bc;
+    font-size: 30px;
 }
 
 h2 {
-  color: #84b6f4;
-  font-size: 26px;
+    color: #84b6f4;
+    font-size: 26px;
 }
 
 h3 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: 400;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 h5 {
-  font-size: 16px;
-  font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /*TEXTO Y ENLACES*/
 p,
 a {
-  font-size: 14px;
-  font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*ESTILO POR DEFECTO DE LOS ENLACES*/
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*ESTILOS HEADER - CABECERA*/
 header {
-  position: relative;
-
-  /*ORDEN*/
-  display: flex;
-  flex-direction: row;
-  /*Separa los contenidos*/
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 3px;
-  margin-bottom: 10px;
+    /*Esta regla es necesaria para poder posicionar el menu de navegación*/
+    position: relative;
+    /*ORDEN*/
+    display: flex;
+    flex-direction: row;
+    /*Separa los contenidos*/
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 3px;
+    margin-bottom: 10px;
     z-index: 2;
 
-  /*BORDE*/
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+    /*BORDE*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
-  /*TAMAÑO*/
-  width: 100%;
-  height: auto;
-  min-height: 80px;
+    /*TAMAÑO*/
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    /*COLORES*/
+    background-color: #c4dafa;
 
-  /*COLORES*/
-  background-color: #c4dafa;
-  filter: drop-shadow(0 2px 4px #00000045);
 }
 
 /*TÍTULO DEL HEADER*/
 header h1 {
-  padding: 3px;
-  text-shadow: 1px 1px 2px #4d82bc;
-  text-align: center;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  color: #fdfd96;
+    padding: 3px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    /*COLOR TRANSPARENTE*/
+    color: transparent;
+    /*Texto con gradiente*/
+    background: linear-gradient(180deg,rgba(250, 250, 52, 1) 0%, rgba(250, 250, 105, 1) 12%, rgba(255, 255, 184, 1) 45%);
+    background-clip: text;
 }
 
 #current-page-title {
@@ -130,18 +144,16 @@ header h1 {
     font-size: 0.8rem;
     text-align: center;
     text-transform: uppercase;
-
-    filter: drop-shadow(0 4px 5px #00000025);
 }
 
 /*MENU NAVEGACIÓN HEADER*/
 .menu-navegacion {
-      /*ORDEN*/
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 9px;
+    /*ORDEN*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
 }
 
 .menu-navegacion nav {
@@ -158,40 +170,34 @@ header h1 {
     border: 2px solid #4d82bc;
     border-radius: 10px;
     padding: 10px;
-    filter: drop-shadow(0 10px 4px #00000030);
 }
 
 .menu-navegacion ul {
-  /*ORDEN*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    /*ORDEN*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /*ENLACES DEL MENU*/
 .menu-navegacion a {
-  text-decoration: none;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #fdfd96;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-/*ENLACES DEL MENU PULSADOS*/
-.menu-navegacion a:hover {
-  color: #f0f07c;
-  text-shadow: 1px 1px 2px #4d82bc;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fdfd96;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /*MENU HAMBURGESA*/
 .menu-toggle-input {
-  display: none;
+    display: none;
 }
 
 .menu-toggle-label {
@@ -215,17 +221,17 @@ header h1 {
 }
 
 /*Cuando la CHECKBOX del menu-toggle-input esta activado se muestra el menu*/
-.menu-toggle-input:checked+.menu-toggle-label+nav {
+.menu-toggle-input:checked + .menu-toggle-label + nav {
     display: block;
 }
 
 /*COLOR DEL BOTÓN ACTIVADO*/
-.menu-toggle-input:checked+.menu-toggle-label {
+.menu-toggle-input:checked + .menu-toggle-label {
     background-color: #f0f07c;
 }
 
 /*MAIN - CONTENIDO PRINCIPAL*/
-main{
+main {
     /*Centra el contenido*/
     display: flex;
     flex-direction: column;
@@ -241,164 +247,205 @@ footer {
     /*ORDEN*/
     margin-top: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     z-index: 2;
     background-color: #c4dafa;
     /*TAMAÑO*/
     width: 100%;
-    height: 190px;
+    height: 400px;
     padding: 20px;
     /*Ajusta la forma en la que el navegador calcula el tamaño de el elementos*/
     box-sizing: border-box;
 }
 
 .footer-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
 }
 
 /*INFORMACIÓN DE CONTACTO*/
 .contacto-info-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  text-align: left;
-  /*TAMAÑO*/
-  width: 100%;
-  height: 100px;
+    text-align: left;
+    /*TAMAÑO*/
+    width: 100%;
+    height: 100px;
 
-  border-radius: 1px;
-  background-color: #84b6f4;
-  color: #ffffff;
+    border-radius: 1px;
+    background-color: #84b6f4;
+    color: #ffffff;
 
-  filter: drop-shadow(0 5px 5px #0000203c);
+    filter: drop-shadow(0 5px 5px #0000203c);
 }
 
 /*TEXTO CONTACTO*/
 .contacto-info-container ul {
-  font-size: 12px;
-  padding-left: 25px;
+    font-size: 12px;
+    padding-left: 25px;
 }
 
 /*TEXTO CONTACTO*/
 .contacto-info-container a {
-  font-size: 13px;
-  text-decoration: none;
-  color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
-/*BOTÓN DE IR AL INICIO*/
+#links-externos-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*GOOGLE MAPS*/
+#links-externos-footer iframe {
+    border-radius: 20px;
+}
+
+#links-externos-footer nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.redes-sociales{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.redes-sociales:hover{
+    transform: scale(1.1);
+}
+    /*BOTÓN DE IR AL INICIO*/
 #irInicio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*TAMAÑO*/
-  width: 80px;
-  height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*TAMAÑO*/
+    width: 80px;
+    height: 30px;
 
-  text-decoration: none;
-  text-align: center;
+    text-decoration: none;
+    text-align: center;
 
-  background-color: #f0f07c;
-  border-radius: 10px;
+    background-color: #f0f07c;
+    border-radius: 10px;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  filter: drop-shadow(0 2px 4px #0000203c);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+    filter: drop-shadow(0 2px 4px #0000203c);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /*BOTÓN DE IR AL INICIO PULSADO*/
 #irInicio:hover {
-  transform: scale(1.05);
-  background-color: #fdfd96;
+    transform: scale(1.05);
+    background-color: #fdfd96;
 }
 
 /*ESTILOS TABLET Y DE MAS DISPOSITIVOS*/
 @media (min-width: 766px) {
-  header {
-    gap: 50px;
-  }
+    header {
+        gap: 50px;
+    }
 
-  header h1 {
-    font-size: 1.5rem;
+    header h1 {
+        font-size: 1.5rem;
 
-  }
+    }
 
-  /*HEADER*/
-  .menu-toggle-label {
-    display: none;
-  }
+    /*HEADER*/
+    .menu-toggle-label {
+        display: none;
+    }
 
-  .menu-navegacion nav {
-    /*ORDEN*/
-    display: block;
-    /*Con esta regla volvemos a colocar el NAV en el header*/
-    position: static;
-    /*DECORACIÓN*/
-    background-color: transparent;
-    border: none;
-  }
+    .menu-navegacion nav {
+        /*ORDEN*/
+        display: block;
+        /*Con esta regla volvemos a colocar el NAV en el header*/
+        position: static;
+        /*DECORACIÓN*/
+        background-color: transparent;
+        border: none;
+    }
 
-  .menu-navegacion ul {
-    /*ORDEN*/
-    flex-direction: row;
-    gap: 20px;
-  }
+    .menu-navegacion ul {
+        /*ORDEN*/
+        flex-direction: row;
+        gap: 20px;
+    }
 
-  .menu-navegacion a {
-    background-color: #84b6f4;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
+    .menu-navegacion a {
+        background-color: #84b6f4;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
 
-  .menu-navegacion a:hover {
-    padding: 5px 10px;
+    .menu-navegacion a:hover {
+        background-color: #4d90e2;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(68, 68, 68, 0.42);
+        transform: translateY(-5px) scale(1.05);
+    }
 
-    background-color: #4d90e2;
-    border-radius: 5px;
-  }
+    /*TITULO PAGINA NO SE MUESTRA*/
+    #current-page-title {
+        display: none;
+    }
 
-  /*TITULO PAGINA NO SE MUESTRA*/
-  #current-page-title {
-    display: none;
-  }
+    /*FOOTER*/
+    footer {
+        justify-content: center;
+        height: 300px;
+        gap: 20px;
+    }
 
-  /*FOOTER*/
-  footer {
-    gap: 50px;
-  }
+    .footer-info {
+        padding: 10px;
+        justify-content: center;
+        /*SEPARA LOS CONTENIDOS*/
+        gap: 10%;
+        flex-direction: row;
+    }
 
-  .footer-info {
-    padding: 10px;
-    justify-content: space-between;
-    flex-direction: row;
-  }
+    .contacto-info-container {
+        /*TAMAÑO*/
+        width: 40%;
+        max-width: 600px;
+        height: auto;
+    }
 
-  .contacto-info-container {
-    /*TAMAÑO*/
-    width: 40%;
-    max-width: 600px;
-    height: auto;
-  }
+    .contacto-info-container ul {
+        font-size: 19px;
+    }
 
-  .contacto-info-container ul {
-    font-size: 19px;
-  }
+    .contacto-info-container a {
+        font-size: 17px;
+    }
 
-  .contacto-info-container a {
-    font-size: 17px;
-  }
+    /*GOOGLE MAPS*/
+    #links-externos-footer iframe {
+        width: 300px;
+        height: 200px;
+    }
 
-  #irInicio {
-    font-size: 20px;
-    /*TAMAÑO*/
-    width: 150px;
-    height: 50px;
-  }
+    .redes-sociales{
+       width: 60px;
+        height: 60px;
+    }
+
+    #irInicio {
+        font-size: 20px;
+        /*TAMAÑO*/
+        width: 150px;
+        height: 50px;
+    }
 }
