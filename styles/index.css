@@ -166,6 +166,18 @@
     font-weight: 700;
 
 }
+/*LATERAL DE LA PAGINA (EN MOBILES ESTA ABAJO)
+    PATROCINADORES Y FRAGMENTO HISTORIA
+*/
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
 /*FRAGMENTO HISTORIA*/
 .fragmento-historia-article{
     display: flex;
@@ -174,11 +186,13 @@
     align-items: center;
     text-align: center;
 
+    width: 85%;
+    height: 340px;
+
     padding: 7px;
     border-radius: 15px;
     background-color: #c4dafa;
-    width: 85%;
-    height: 340px;
+    box-shadow: 0 4px 4px rgba(22, 22, 22, 0.50);
 }
 
 .fragmento-historia-article h4{
@@ -202,17 +216,6 @@
 }
 .fragmento-historia-article a:hover{
     background: #eeee69;
-}
-/*LATERAL DE LA PAGINA (EN MOBILES ESTA ABAJO)
-    PATROCINADORES Y FRAGMENTO HISTORIA
-*/
-aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    width: 100%;
 }
 
 #patrocinadores{
@@ -282,6 +285,7 @@ aside{
     }
 }
 
+/*LAPTOPS DESKTOP...*/
 @media (min-width: 1024px){
     #noticia-principal-article {
         width: 50%;
@@ -318,5 +322,10 @@ aside{
         padding: 10px;
         font-size: 14px;
     }
+
+    .fragmento-historia-article{
+        max-width: 450px;
+    }
+
 }
 
