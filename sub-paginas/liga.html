@@ -40,7 +40,7 @@
         <!--MENU DE NAVEGACION-->
         <div class="menu-navegacion">
             <!--TITULO DE PAGINA ACTUAL-->
-            <h2 id="current-page-title">Pagina Principal</h2>
+            <h2 id="current-page-title">LIGA</h2>
             <!--MENU HAMBURGUESA-->
             <input type="checkbox" id="menu-toggle" class="menu-toggle-input"/>
             <label for="menu-toggle" class="menu-toggle-label">☰</label>
@@ -69,212 +69,193 @@
 </header>
 <!--MENÚ DESPLEGABLE DE NAVEGACIÓN-->
 <main>
+        <div id="intro-liga">
+            <h1>TEMPORADA 2025 - 2026</h1>
+            <p>
+                ¡El Voleibol de élite tiene a sus reyes y reinas! Echa un vistazo a la
+                clasificación oficial de la Superliga y ponte al día con quién manda en la pista.
+            </p>
+        </div>
 
-    <body>
-    <main>
-        <h1>TEMPORADA 2025 - 2026</h1>
-        <p class="intro">
-            ¡El Voleibol de élite tiene a sus reyes y reinas! Echa un vistazo a la
-            clasificación oficial de la Superliga (M/F) y ponte al día con quién manda en la pista.
-        </p>
 
-        <section class="equipos">
-            <h2>EQUIPOS PRINCIPALES</h2>
+        <section class="equipos-principales">
+            <h3>EQUIPOS PRINCIPALES</h3>
             <ol>
-                <li>CV Zaragoza</li>
-                <li>CV San Fernando</li>
-                <li>Valladolid CV</li>
-                <li>CV Torrelavega</li>
-                <li>CV Palma</li>
-                <li>CV Rivas</li>
+                <li>CV Zaragoza
+                    <img
+                            src="../assets/img/equipos/cv-zaragoza.png"
+                            alt="CV Zaragoza"
+                            title="CV Zaragoza"
+                            width="35px" height="35px"
+                            loading="lazy"
+                    />
+                </li>
+                <li>CV San Fernando
+                    <img
+                            src="../assets/img/equipos/cv-san-fernando.jpg"
+                            alt="CV Zaragoza"
+                            title="CV Zaragoza"
+                            width="35px" height="35px"
+                            loading="lazy"
+                    />
+                </li>
+                <li>Valladolid CV
+                    <img
+                            src="../assets/img/equipos/cv-valladolid.jpeg"
+                            alt="CV Zaragoza"
+                            title="CV Zaragoza"
+                            width="35px" height="35px"
+                            loading="lazy"
+                    />
+                </li>
+                <li>CV Torrelavega
+                    <img
+                            src="../assets/img/equipos/cv-torrelavega.png"
+                            alt="CV Zaragoza"
+                            title="CV Zaragoza"
+                            width="35px" height="35px"
+                            loading="lazy"
+                    />
+                </li>
+                <li>CV Palma
+                    <img
+                            src="../assets/img/equipos/cv-palma.jpeg"
+                            alt="CV Zaragoza"
+                            title="CV Zaragoza"
+                            width="35px" height="35px"
+                            loading="lazy"
+                    />
+                </li>
+                <li>CV Rivas
+                    <img
+                            src="../assets/img/equipos/cv-rivas.jpg"
+                            alt="CV Zaragoza"
+                            title="CV Zaragoza"
+                            width="35px" height="35px"
+                            loading="lazy"
+                    />
+                </li>
             </ol>
         </section>
-
         <section class="clasificaciones">
-            <div class="tabla">
-                <h2>CLASIFICACIÓN MASCULINA</h2>
-                <div class="tabla-scroll"></div>
+            <!--CLASIFICACIÓN MASCULINA-->
+            <div>
                 <table>
+                    <thead>
+                    <tr>
+                        <th class="tituloTabla" colspan="10">CLASIFICACIÓN</th>
+                    </tr>
                     <tr>
                         <th>POSIC</th>
-                        <th>Equipo</th>
+                        <th>EQUIPO</th>
                         <th>PTOS</th>
                         <th>P.J</th>
                         <th>P.G</th>
                         <th>P.P</th>
-                        <th>S.G</th>
-                        <th>S.P</th>
+                        <th>S.F</th>
+                        <th>S.C</th>
                         <th>T.A</th>
                         <th>T.C</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr>
-                        <td>1</td>
+                        <td class="clasificación-posic">1</td>
                         <td>CV Zaragoza</td>
+                        <td>28</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>1</td>
                         <td>29</td>
-                        <td>10</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>30</td>
-                        <td>4</td>
-                        <td>831</td>
-                        <td>666</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>CV San Fernando</td>
-                        <td>20</td>
-                        <td>10</td>
                         <td>7</td>
-                        <td>3</td>
-                        <td>23</td>
-                        <td>13</td>
-                        <td>812</td>
-                        <td>748</td>
+                        <td>885</td>
+                        <td>750</td>
                     </tr>
                     <tr>
-                        <td>3</td>
+                        <td class="clasificación-posic">2</td>
+                        <td>CV San Fernando</td>
+                        <td>22</td>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>26</td>
+                        <td>12</td>
+                        <td>890</td>
+                        <td>815</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">3</td>
                         <td>Valladolid CV</td>
                         <td>18</td>
                         <td>10</td>
                         <td>6</td>
                         <td>4</td>
                         <td>21</td>
-                        <td>14</td>
-                        <td>798</td>
-                        <td>745</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>CV Torrelavega</td>
-                        <td>11</td>
-                        <td>10</td>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>13</td>
-                        <td>20</td>
-                        <td>708</td>
-                        <td>737</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>CV Palma</td>
-                        <td>7</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>8</td>
-                        <td>10</td>
-                        <td>26</td>
-                        <td>713</td>
+                        <td>16</td>
+                        <td>845</td>
                         <td>830</td>
                     </tr>
                     <tr>
+                        <td class="clasificación-posic">4</td>
+                        <td>CV Torrelavega</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>4</td>
                         <td>6</td>
+                        <td>15</td>
+                        <td>22</td>
+                        <td>805</td>
+                        <td>860</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">5</td>
+                        <td>CV Palma</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>790</td>
+                        <td>895</td>
+                    </tr>
+                    <tr>
+                        <td class="clasificación-posic">6</td>
                         <td>CV Rivas</td>
-                        <td>5</td>
+                        <td>2</td>
                         <td>10</td>
                         <td>1</td>
                         <td>9</td>
                         <td>7</td>
-                        <td>27</td>
-                        <td>659</td>
-                        <td>795</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="tabla">
-                <h2>CLASIFICACIÓN FEMENINA</h2>
-                <div class="tabla-scroll"></div>
-                <table>
-                    <tr>
-                        <th>POSIC</th>
-                        <th>Equipo</th>
-                        <th>PTOS</th>
-                        <th>P.J</th>
-                        <th>P.G</th>
-                        <th>P.P</th>
-                        <th>S.G</th>
-                        <th>S.P</th>
-                        <th>T.A</th>
-                        <th>T.C</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>CV Zaragoza</td>
                         <td>29</td>
-                        <td>10</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>30</td>
-                        <td>4</td>
-                        <td>831</td>
-                        <td>666</td>
+                        <td>710</td>
+                        <td>875</td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>CV San Fernando</td>
-                        <td>20</td>
-                        <td>10</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>23</td>
-                        <td>13</td>
-                        <td>812</td>
-                        <td>748</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Valladolid CV</td>
-                        <td>18</td>
-                        <td>10</td>
-                        <td>6</td>
-                        <td>4</td>
-                        <td>21</td>
-                        <td>14</td>
-                        <td>798</td>
-                        <td>745</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>CV Torrelavega</td>
-                        <td>11</td>
-                        <td>10</td>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>13</td>
-                        <td>20</td>
-                        <td>708</td>
-                        <td>737</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>CV Palma</td>
-                        <td>7</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>8</td>
-                        <td>10</td>
-                        <td>26</td>
-                        <td>713</td>
-                        <td>830</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>CV Rivas</td>
-                        <td>5</td>
-                        <td>10</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>7</td>
-                        <td>27</td>
-                        <td>659</td>
-                        <td>795</td>
-                    </tr>
+                    </tbody>
                 </table>
             </div>
         </section>
-    </main>
-    </body>
+        <section class="videos-liga">
+            <div class="video-container">
+                <h3>Campeonato de España de Vóley Playa 2025</h3>
+                <video controls width="250" height="150">
+                    <source src="../assets/videos/video-1.mp4" type="video/mp4"/>
+                    <source src="../assets/videos/video-1.webm" type="video/webm"/>
+                    <source src="../assets/videos/video-1.mov" type="video/mov"/>
+                    Lo sentimos, tu navegador no puede mostrar este video.
+                </video>
+            </div>
+
+            <div class="video-container">
+                <h3>El CNVP deslumbra en la Diputación de Cádiz Beach Sports</h3>
+                <video controls width="250" height="150" >
+                    <source src="../assets/videos/video-2.mp4" type="video/mp4"/>
+                    <source src="../assets/videos/video-2.webm" type="video/webm"/>
+                    <source src="../assets/videos/video-2.mov" type="video/mov"/>
+                    Lo sentimos, tu navegador no puede mostrar este video.
+                </video>
+            </div>
+        </section>
 </main>
 <!--FOOTER-->
 <footer>

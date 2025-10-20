@@ -1,129 +1,283 @@
 <!DOCTYPE html>
-<!--LENGUAJE DE LA PAGINA-->
 <html lang="es">
-
-<head>
-    <!--CONFIGURACIÓN DE LA PAGINA-->
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--ICONO DE LA PAGINA-->
-    <link rel="icon" href="../assets/favicon/favicon.ico"/>
-    <!--TITULO DE LA PAGINA-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon/favicon.ico" />
     <title>RFEVB | Historia</title>
 
-    <!-- METADATOS -->
-    <meta name="description"
-          content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la información de tus equipos."/>
+    <meta
+      name="description"
+      content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la información de tus equipos."
+    />
 
-    <meta name="application-name" content="Real Federación de Voleibol"/>
-    <meta name="author" content="Real Federación Española de Voleibol"/>
+    <meta name="application-name" content="Real Federación de Voleibol" />
+    <meta name="author" content="Real Federación Española de Voleibol" />
 
-    <!--LINK HOJAS DE ESTILO (CSS)-->
+    <link rel="stylesheet" href="../styles/historia.css" hreflang="CSS" />
+    <link rel="stylesheet" href="../styles/global.css" hreflang="CSS" />
+  </head>
 
-    <!--CSS ESPECIFICO DE TODA LA PAGINA-->
-    <link rel="stylesheet" href="../styles/index.css" hreflang="CSS"/>
-    <!--CSS GLOBAL DE TODA LA WEB-->
-    <link rel="stylesheet" href="../styles/global.css" hreflang="CSS"/>
-</head>
-
-<body id="app">
-<!--HEADER-->
-<header>
-    <!--LOGO DE LA FEDERACIÓN-->
-    <div class="logo-federación">
-        <img src="../assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
-             title="Real Federación Española de Voleibol" loading="eager" width="63" height="119"/>
-    </div>
-    <div class="header-content">
-        <!--TITULO DEL HEADER-->
+  <body id="app">
+    <header>
+      <div class="logo-federación">
+        <img
+          src="../assets/img/logoFederación.png"
+          alt="Logo Real Federación Española de Voleibol"
+          title="Real Federación Española de Voleibol"
+          loading="eager"
+          width="63"
+          height="119"
+        />
+      </div>
+      <div class="header-content">
         <h1>Real Federación Española de Voleibol</h1>
-        <!--MENU DE NAVEGACION-->
         <div class="menu-navegacion">
-            <!--TITULO DE PAGINA ACTUAL-->
-            <h2 id="current-page-title">Pagina Principal</h2>
-            <!--MENU HAMBURGUESA-->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle-input"/>
-            <label for="menu-toggle" class="menu-toggle-label">☰</label>
-            <!--MENÚ DESPLEGABLE-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html" title="Inicio" target="_self">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./liga.html" title="Liga" target="_self">Liga</a>
-                    </li>
-                    <li>
-                        <a href="./jornadas.html" title="Jornadas" target="_self">Jornadas</a>
-                    </li>
-                    <li>
-                        <a href="./noticias.html" title="Noticias" target="_self">Noticias</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Historia" target="_self">Historia</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-<!--CONTENIDO PRINCIPAL-->
-<main id="pagina-principal-contenido">
-</main>
-
-<!--FOOTER-->
-<footer>
-    <!--LOGO DE LA FEDERACIÓN-->
-    <div class="logo-federación">
-        <img src="../assets/img/logoFederación.png" alt="Logo Real Federación Española de Voleibol"
-             title="Real Federación Española de Voleibol" loading="eager" width="63" height="119"/>
-    </div>
-    <div class="footer-info">
-        <!--INFORMACIÓN DE CONTACTO-->
-        <div class="contacto-info-container">
+          <h2 id="current-page-title">Historia</h2>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+          <label for="menu-toggle" class="menu-toggle-label">☰</label>
+          <nav>
             <ul>
-                <li><b>Dirección:</b> Paseo Imperial 6 piso 3º A</li>
-                <li>28005 - Madrid</li>
-                <li>
-                    <b>Teléfono: </b><a href="tel:+34917014090">+34917014090</a>.
-                </li>
-                <li>
-                    <b>Correo: </b><a href="mailto:correo@rfevb.com" title="correo@rfevb.com">correo@rfevb.com</a>
-                </li>
+              <li>
+                <a href="../index.html" title="Inicio" target="_self">Inicio</a>
+              </li>
+              <li>
+                <a href="./liga.html" title="Liga" target="_self">Liga</a>
+              </li>
+              <li>
+                <a href="./jornadas.html" title="Jornadas" target="_self"
+                  >Jornadas</a
+                >
+              </li>
+              <li>
+                <a href="./noticias.html" title="Noticias" target="_self"
+                  >Noticias</a
+                >
+              </li>
+              <li>
+                <a href="#" title="Historia" target="_self">Historia</a>
+              </li>
             </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="pagina-principal-contenido">
+      <article class="fragmento-historia-article">
+        <header>
+          <h4>Nuestra Pasión, Nuestra Historia</h4>
+        </header>
+        <section>
+          <p>
+            Desde su fundación en 1960, la Real Federación Española de Voleibol
+            ha sido el corazón del voleibol en nuestro país. Nacimos con la
+            misión de organizar y promover un deporte que une a miles de
+            personas, desde la cantera hasta la élite de nuestras selecciones
+            nacionales. A lo largo de más de seis décadas, la RFEVB ha impulsado
+            la consolidación del deporte en España. Los años 90, marcados por la
+            visibilidad de los Juegos Olímpicos de Barcelona 92, fueron clave
+            para la profesionalización del voleibol y la emergencia del voley
+            playa. En el siglo XXI, la Federación se ha enfocado en la
+            excelencia y la expansión. Mantenemos el prestigio de nuestras ligas
+            nacionales —las Superligas— y hemos posicionado a España como
+            potencia mundial en voley playa, con resultados destacados a nivel
+            europeo e internacional. Nuestra misión sigue siendo la misma:
+            fomentar el deporte base, tecnificar el talento y representar la
+            excelencia española en el escenario global.
+          </p>
+        </section>
+      </article>
+
+      <div class="audio-container">
+        <h5>VERSIÓN EN AUDIO</h5>
+        <audio controls>
+            <source src="../assets/audio/lectura_historia_feracion.mp3" type="audio/mpeg">
+            <source src="../assets/audio/lectura_historia_feracion.wav" type="audio/wav">
+            <source src="../assets/audio/lectura_historia_feracion.ogg" type="audio/ogg">
+            <source src="../assets/audio/lectura_historia_feracion.aac" type="audio/aac">
+          Tu navegador no soporta el elemento de audio.
+          </audio>
+      </div>
+
+      <div class="imagenes-historia-container">
+        <img
+          src="../assets/img/historia/voleibol-antiguo.jpg"
+          alt="Jugadores de Vóley antigua"
+          title="Vóley Playa en la historia de RFEVB"
+          loading="lazy"
+          width="300"
+          height="auto"
+        />
+        <img
+          src="../assets/img/historia/voleibol-actual.jpg"
+          alt="Partido de Vóley actual"
+          title="Vóley Pista en la historia de RFEVB"
+          loading="lazy"
+          width="300"
+          height="auto"
+        />
+      </div>
+
+      <div class="audio-container">
+        <h5>ESCUCHA NUESTRO HIMNO</h5>
+        <audio controls>
+            <source src="../assets/audio/himno-federacion.mp3" type="audio/mpeg">
+            <source src="../assets/audio/himno-federacion.wav" type="audio/wav">
+            <source src="../assets/audio/himno-federacion.ogg" type="audio/ogg">
+            <source src="../assets/audio/himno-federacion.aac" type="audio/aac">
+          Tu navegador no soporta el elemento de audio.
+          </audio>
+      </div>
+
+      <article class="organigrama-rfevb">
+        <h2>Organigrama RFEVB</h2>
+        <table class="tabla-organigrama">
+          <thead>
+            <tr>
+              <th colspan="2" >Presidencia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Presidente</b></td>
+              <td>Felipe Pascual Bernáldez</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="seccion-titulo">Dirección Técnica</td>
+            </tr>
+            <tr>
+              <td><b>Selecciones Nacionales</b></td>
+              <td>Juan Alonso</td>
+            </tr>
+            <tr>
+              <td><b>Voley Playa</b></td>
+              <td>David Fernández</td>
+            </tr>
+            <tr>
+              <td><b>Formación</b></td>
+              <td>Jorge Rodríguez</td>
+            </tr>
+            <tr>
+              <td><b>Tecnificación y Promoción</b></td>
+              <td>Manuel Berdegué</td>
+            </tr>
+              <td><b>Competiciones</b></td>
+              <td >
+                José López-Manzanares
+                <br>
+                María Luisa Pérez
+              </td>
+            </tr>
+            <tr>
+              <td><b>CTNA</b></td>
+              <td>Luis Ángel Ruenes</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="seccion-titulo">
+                Secretaría General y Administración
+              </td>
+            </tr>
+            <tr>
+              <td><b>Sec. General - Gerente</b></td>
+              <td>Juan Pedro Sánchez</td>
+            </tr>
+            <tr>
+              <td><b>Jefa de Contabilidad</b></td>
+              <td>Mª Mar Gil</td>
+            </tr>
+            <tr>
+              <td><b>Administración</b></td>
+              <td >
+                José Luis Redondo
+                <br>
+                Celia Palomo
+              </td>
+            </tr>
+            <tr>
+              <td><b>Licencias</b></td>
+              <td>Mª Dolores Durán</td>
+            </tr>
+            <tr>
+              <td><b>Comunicación</b></td>
+              <td>Eduardo Martín</td>
+            </tr>
+            <tr>
+              <td><b>Organización Eventos</b></td>
+              <td>Benjamín Vicedo</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+    <footer>
+      <div class="logo-federación">
+        <img
+          src="../assets/img/logoFederación.png"
+          alt="Logo Real Federación Española de Voleibol"
+          title="Real Federación Española de Voleibol"
+          loading="eager"
+          width="63"
+          height="119"
+        />
+      </div>
+      <div class="footer-info">
+        <div class="contacto-info-container">
+          <ul>
+            <li><b>Dirección:</b> Paseo Imperial 6 piso 3º A</li>
+            <li>28005 - Madrid</li>
+            <li>
+              <b>Teléfono: </b><a href="tel:+34917014090">+34917014090</a>.
+            </li>
+            <li>
+              <b>Correo: </b
+              ><a href="mailto:correo@rfevb.com" title="correo@rfevb.com"
+                >correo@rfevb.com</a
+              >
+            </li>
+          </ul>
         </div>
 
         <div id="links-externos-footer">
-            <!--Google Maps-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.96225465472!2d-3.720655925018491!3d40.4096869560695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227df2c900001%3A0xd7fac6b4486d66b3!2sP.%C2%BA%20Imperial%2C%206%2C%20piso%203%C2%BA%20A%2C%20Arganzuela%2C%2028005%20Madrid!5e0!3m2!1ses!2ses!4v1760871312823!5m2!1ses!2ses"
-                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!--Redes Sociales-->
-            <nav>
-                <a href="https://www.youtube.com/@voleytv" target="_blank" title="Youtube">
-                    <img
-                            src="../assets/img/youtube.svg"
-                            alt="Youtube" title="Youtube"
-                            width="40" height="40"
-                            loading="lazy"
-                            class="redes-sociales"
-                    />
-                </a>
-                <a href="https://x.com/RFEVB" target="_blank" title="X">
-                    <img
-                            src="../assets/img/twitter.svg"
-                            alt="x" title="X"
-                            width="40" height="40"
-                            loading="lazy"
-                            class="redes-sociales"
-                    />
-                </a>
-            </nav>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.96225465472!2d-3.720655925018491!3d40.4096869560695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227df2c900001%3A0xd7fac6b4486d66b3!2sP.%C2%BA%20Imperial%2C%206%2C%20piso%203%C2%BA%20A%2C%20Arganzuela%2C%2028005%20Madrid!5e0!3m2!1ses!2ses!4v1760871312823!5m2!1ses!2ses"
+            width="200"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <nav>
+            <a
+              href="https://www.youtube.com/@voleytv"
+              target="_blank"
+              title="Youtube"
+            >
+              <img
+                src="../assets/img/youtube.svg"
+                alt="Youtube"
+                title="Youtube"
+                width="40"
+                height="40"
+                loading="lazy"
+                class="redes-sociales"
+              />
+            </a>
+            <a href="https://x.com/RFEVB" target="_blank" title="X">
+              <img
+                src="../assets/img/twitter.svg"
+                alt="x"
+                title="X"
+                width="40"
+                height="40"
+                loading="lazy"
+                class="redes-sociales"
+              />
+            </a>
+          </nav>
         </div>
-        <!--BOTÓN PARA VOLVER AL INICIO-->
         <a href="#" target="_top" id="irInicio" title="Ir a inicio">Inicio</a>
-    </div>
-</footer>
-</body>
-
+      </div>
+    </footer>
+  </body>
 </html>

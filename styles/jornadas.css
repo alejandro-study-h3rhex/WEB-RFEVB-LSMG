@@ -1,0 +1,102 @@
+#intro{
+    padding: 10px 20px;
+}
+
+#intro h1{
+    font-size: 34px;
+}
+
+/*Tablas Jornadas*/
+#jornadas-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+}
+
+.jornada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(215, 211, 202, 0.62);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.jornada table{
+    border-collapse: collapse;
+}
+
+.jornada table caption{
+    font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 1px #4d82bc;
+    color: #eeee69;
+    margin: 5px;
+}
+
+.jornada thead{
+    background-color: #4d82bc;
+}
+
+.jornada thead tr{
+    font-size: 20px;
+    font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+}
+.eq-local, .eq-vistante{
+    padding: 10px;
+}
+/*borde redondeado - la separación es necearía para poder hacer bien el efecto*/
+.eq-local{
+    border-top-left-radius: 10px;
+}
+.eq-vistante{
+    border-top-right-radius: 10px;
+}
+
+.jornada tbody{
+    background-color: #c4dafa;
+}
+
+.jornada tbody td{
+    padding: 2px 10px;
+    border: 2px solid #eeebe4;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/*Efecto sobre celdas*/
+.jornada tbody tr:hover td {
+    background-color: #84b6f4; /* Un color ligeramente más claro al pasar el ratón */
+    transform: scale(1.03);
+}
+/*Gracias a esto podemos alinear el logo de el equipo con el texto*/
+.jornada-equipo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.jornada-equipo img{
+    /*Hace que la imagen sea redonda*/
+    border-radius: 100%;
+}
+
+.jornada-equipo p{
+    text-align: left;
+    font-size: 12px;
+}
+
+/*LAPTOPS Y DE MAS*/
+@media (min-width: 1024px) {
+    #jornadas-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
