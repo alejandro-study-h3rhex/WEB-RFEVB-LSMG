@@ -1,0 +1,11 @@
+.fragmento-historia-article {
+  width: 80%;
+  padding: 5px;
+}
+.fragmento-historia-article header {
+  background-color: transparent;
+}
+
+.fragmento-historia-article header h4 {
+  color: #4d82bc;
+}
