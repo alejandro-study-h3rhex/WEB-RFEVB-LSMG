@@ -6,7 +6,7 @@
 
 }
 
-/*SECCIÓN PRINCIPAL DE EL CONTENIDO DE LA PAGINA*/
+/*SECCIÓN PRINCIPAL DE EL CONTENIDO DE LA PÁGINA*/
 #sección-principal {
     /*Centra el contenido*/
     display: flex;
@@ -26,7 +26,7 @@
     margin-bottom: 20px;
 }
 
-/*TITULO Y IMAGEN NOTICIA DESTACA*/
+/*TÍTULO Y IMAGEN NOTICIA DESTACA*/
 .cabecera-noticia {
     position: relative;
     display: flex;
@@ -105,8 +105,8 @@
 }
 
 
-/*CLASSIFICATION - TABLA*/
-/*Contenedor de la tabla/s*/
+/*CLASIFICATION - TABLA*/
+/*Contenedor de la tablas*/
 .clasificaciones {
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@
     box-shadow: 0 3px 4px rgba(22, 22, 22, 0.20);
 }
 
-/*TITULO TABLA*/
+/*TÍTULO TABLA*/
 .clasificaciones .tituloTabla {
     padding: 10px;
     background: #4d82bc;
@@ -162,7 +162,7 @@
     transition: background-color 0.3s ease;
 }
 
-/*EFECTO AFECTA A TODA LA LINEA*/
+/*EFECTO AFECTA A TODA LA LÍNEA*/
 .clasificaciones tbody tr:hover td {
     background-color: #88ade7; /* Un color ligeramente más claro al pasar el ratón */
 }
@@ -175,7 +175,7 @@
 
 }
 
-/*LATERAL DE LA PAGINA (EN MOBILES ESTA ABAJO)
+/*LATERAL DE LA PÁGINA (EN MÓVILES ESTÁ ABAJO)
     PATROCINADORES Y FRAGMENTO HISTORIA
 */
 aside {
@@ -260,7 +260,7 @@ aside {
         min-height: 160px;
     }
 
-    /*TABLA CLASIFICACION*/
+    /*TABLA CLASIFICACIÓN*/
     .clasificaciones {
         width: 100%;
     }
@@ -280,7 +280,7 @@ aside {
         font-size: 16px;
     }
 
-    /*TABLA CLASIFICACION*/
+    /*TABLA CLASIFICACIÓN*/
     .fragmento-historia-article {
         width: 100%;
         max-width: 700px;
@@ -322,7 +322,7 @@ aside {
         margin: 15px 5px;
     }
 
-    /*TABLA CLASIFICACION*/
+    /*TABLA CLASIFICACIÓN*/
     .clasificaciones .tituloTabla {
         padding: 14px;
         font-size: 22px;

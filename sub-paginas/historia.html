@@ -1,11 +1,16 @@
 <!DOCTYPE html>
+<!--LENGUAJE DE LA PÁGINA-->
 <html lang="es">
   <head>
+    <!--CONFIGURACIÓN DE LA PÁGINA-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ICONO DE LA PÁGINA-->
     <link rel="icon" href="../assets/favicon/favicon.ico" />
+    <!--TÍTULO DE LA PÁGINA-->
     <title>RFEVB | Historia</title>
 
+    <!-- METADATOS -->
     <meta
       name="description"
       content="Vive toda la emoción del voleibol nacional. Consulta las últimas noticias, clasificaciones de la Superliga, calendario de partidos y toda la información de tus equipos."
@@ -14,12 +19,18 @@
     <meta name="application-name" content="Real Federación de Voleibol" />
     <meta name="author" content="Real Federación Española de Voleibol" />
 
+    <!--LINK HOJAS DE ESTILO (CSS)-->
+
+    <!--CSS ESPECÍFICO DE TODA LA PÁGINA-->
     <link rel="stylesheet" href="../styles/historia.css" hreflang="CSS" />
+    <!--CSS GLOBAL DE TODA LA WEB-->
     <link rel="stylesheet" href="../styles/global.css" hreflang="CSS" />
   </head>
 
   <body id="app">
+    <!--HEADER-->
     <header>
+      <!--LOGO DE LA FEDERACIÓN-->
       <div class="logo-federación">
         <img
           src="../assets/img/logoFederación.png"
@@ -30,12 +41,17 @@
           height="119"
         />
       </div>
+      <!--TÍTULO DEL HEADER-->
       <div class="header-content">
         <h1>Real Federación Española de Voleibol</h1>
+        <!--MENÚ DE NAVEGACIÓN-->
         <div class="menu-navegacion">
+          <!--TÍTULO DE PÁGINA ACTUAL-->
           <h2 id="current-page-title">Historia</h2>
+          <!--MENÚ HAMBURGUESA-->
           <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
           <label for="menu-toggle" class="menu-toggle-label">☰</label>
+          <!--MENÚ DESPLEGABLE-->
           <nav>
             <ul>
               <li>
@@ -63,6 +79,7 @@
       </div>
     </header>
     <main id="pagina-principal-contenido">
+      <!-- CONTENEDOR TEXTO NUESTRA HISTORIA -->
       <article class="fragmento-historia-article">
         <header>
           <h4>Nuestra Pasión, Nuestra Historia</h4>
@@ -93,7 +110,7 @@
           </p>
         </section>
       </article>
-
+      <!-- CONTENEDOR AUDIO HISTORIA -->
       <div class="audio-container">
         <h5>VERSIÓN EN AUDIO</h5>
         <audio controls>
@@ -104,7 +121,7 @@
           Tu navegador no soporta el elemento de audio.
           </audio>
       </div>
-
+      <!-- CONTENEDOR IMAGENES -->
       <div class="imagenes-historia-container">
         <img
           src="../assets/img/historia/voleibol-antiguo.jpg"
@@ -123,7 +140,7 @@
           height="auto"
         />
       </div>
-
+      <!-- CONTENEDOR AUDIO HIMNO -->
       <div class="audio-container">
         <h5>ESCUCHA NUESTRO HIMNO</h5>
         <audio controls>
@@ -134,7 +151,7 @@
           Tu navegador no soporta el elemento de audio.
           </audio>
       </div>
-
+      <!-- CONTENEDOR TABLA ORGANIGRAMA -->
       <article class="organigrama-rfevb">
         <h2>Organigrama RFEVB</h2>
         <table class="tabla-organigrama">
@@ -215,7 +232,9 @@
         </table>
       </article>
     </main>
+    <!--FOOTER-->
     <footer>
+      <!--LOGO DE LA FEDERACIÓN-->
       <div class="logo-federación">
         <img
           src="../assets/img/logoFederación.png"
@@ -226,6 +245,7 @@
           height="119"
         />
       </div>
+      <!--INFORMACIÓN DE CONTACTO-->
       <div class="footer-info">
         <div class="contacto-info-container">
           <ul>
@@ -244,6 +264,7 @@
         </div>
 
         <div id="links-externos-footer">
+          <!--Google Maps-->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.96225465472!2d-3.720655925018491!3d40.4096869560695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227df2c900001%3A0xd7fac6b4486d66b3!2sP.%C2%BA%20Imperial%2C%206%2C%20piso%203%C2%BA%20A%2C%20Arganzuela%2C%2028005%20Madrid!5e0!3m2!1ses!2ses!4v1760871312823!5m2!1ses!2ses"
             width="200"
@@ -253,6 +274,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          <!--Redes Sociales-->
           <nav>
             <a
               href="https://www.youtube.com/@voleytv"
@@ -281,6 +303,7 @@
               />
             </a>
           </nav>
+          <!--BOTÓN PARA VOLVER AL INICIO-->
         </div>
         <a href="#" target="_top" id="irInicio" title="Ir a inicio">Inicio</a>
       </div>

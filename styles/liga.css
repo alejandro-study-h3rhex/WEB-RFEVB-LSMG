@@ -43,7 +43,7 @@
     border-radius: 100%;
 }
 
-/*CLASSIFICATION - TABLA*/
+/*CLASIFICATION - TABLA*/
 /*Contenedor de la tabla/*/
 .clasificaciones {
     display: flex;
@@ -72,7 +72,7 @@
     box-shadow: 0 3px 4px rgba(22, 22, 22, 0.20);
 }
 
-/*TITULO TABLA*/
+/*TÍTULO TABLA*/
 .clasificaciones .tituloTabla {
     padding: 10px;
     background: #4d82bc;
@@ -100,7 +100,7 @@
     transition: background-color 0.3s ease;
 }
 
-/*EFECTO AFECTA A TODA LA LINEA*/
+/*EFECTO AFECTA A TODA LA LÍNEA*/
 .clasificaciones tbody tr:hover td {
     background-color: #88ade7; /* Un color ligeramente más claro al pasar el ratón */
 }
@@ -134,7 +134,7 @@
 }
 
 @media (min-width: 766px) and (max-width: 1023px) {
-    /*TABLA CLASIFICACION*/
+    /*TABLA CLASIFICACIÓN*/
     .clasificaciones {
         width: 100%;
     }
@@ -163,7 +163,7 @@
     }
 
 
-    /*TABLA CLASIFICACION*/
+    /*TABLA CLASIFICACIÓN*/
     .clasificaciones .tituloTabla {
         padding: 14px;
         font-size: 22px;

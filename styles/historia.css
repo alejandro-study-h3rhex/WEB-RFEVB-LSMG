@@ -1,221 +1,255 @@
 .fragmento-historia-article {
-  width: 80%;
-  padding: 5px;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 10px;
+  width: 80%; 
+  padding: 5px; 
+  padding: 10px 20px; 
+  margin: 10px; 
+  border-radius: 10px; 
   background-color: #c4dafa; 
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.48); 
 }
+
+/* Estilos para el header dentro del artículo de historia */
 .fragmento-historia-article header {
-  background-color: transparent;
+  background-color: transparent; 
 }
 
+/* Estilos para el título h4 dentro del encabezado del artículo */
 .fragmento-historia-article header h4 {
   color: #4d82bc; 
 }
 
+/* Estilos para el contenedor de audio */
 .audio-container {
-    width: 80%;
-    margin-bottom: 20px;
-    text-align: center;
+  width: 80%;
+  margin-bottom: 20px; 
+  text-align: center; 
 }
 
+/* Estilos para el título h5 del contenedor del audio */
 .audio-container h5 {
-    color: #161616; 
-    margin: 10px 0; 
+  color: #161616; 
+  margin: 10px 0; 
 }
 
+/* Estilos para el audio */
 .audio-container audio {
-    width: 100%;
-    max-width: 350px; 
+  width: 100%; 
+  max-width: 350px; 
 }
 
+/* Estilos para el contenedor de las imágenes de historia */
 .imagenes-historia-container {
-    display: flex;
-    flex-direction: column; 
-    gap: 15px; 
-    margin-bottom: 20px;
-    align-items: center; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+  margin-bottom: 20px; 
+  align-items: center; 
 }
 
+/* Estilos para las imágenes dentro del contenedor */
 .imagenes-historia-container img {
-    width: 80%; 
-    max-width: 350px; 
-    height: 250px; 
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    object-fit: cover; 
+  width: 80%; 
+  max-width: 350px; 
+  height: 250px; 
+  border-radius: 10px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+  object-fit: cover; 
 }
+
+/* Estilos para el contenedor del organigrama */
 .organigrama-rfevb {
-    width: 90%;
-    margin-bottom: 20px;
-    text-align: center;
+  width: 90%; 
+  margin-bottom: 20px; 
+  text-align: center; 
 }
 
+/* Estilos para el título del organigrama */
 .organigrama-rfevb h2 {
-    color: #4d82bc; 
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 26px; 
+  color: #4d82bc; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+  font-size: 26px; 
 }
 
+/* Estilos para la tabla del organigrama */
 .tabla-organigrama {
-    width: 100%;
-    border: 1px solid #4d82bc;
-    border-collapse: collapse;
-    text-align: left;
-    font-family: "Lexend", sans-serif;
-    color: #161616;
-    background-color: #fdfdfd; 
-    border-radius: 10px;
-    overflow: hidden;
+  width: 100%; 
+  border: 1px solid #4d82bc; 
+  border-collapse: collapse; 
+  text-align: left; 
+  font-family: "Lexend", sans-serif; 
+  color: #161616;
+  background-color: #fdfdfd;
+  border-radius: 10px; 
+  overflow: hidden; 
 }
 
+/* Estilos para las celdas de encabezado de la tabla */
 .tabla-organigrama th {
-    background-color: #4d82bc; 
-    color: #ffffff;
-    font-weight: 700;
-    padding: 8px 12px;
-    text-align: center;
+  background-color: #4d82bc; 
+  color: #ffffff; 
+  font-weight: 700; 
+  padding: 8px 12px; 
+  text-align: center; 
 }
 
+/* Estilos para las celdas de datos de la tabla */
 .tabla-organigrama td {
-    padding: 8px 12px;
-    border-bottom: 1px solid #eeebe4; 
-    font-size: 14px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eeebe4; 
+  font-size: 14px; 
 }
 
 .tabla-organigrama tbody tr:last-child td {
-    border-bottom: none; 
+  border-bottom: none;
 }
 
+/* Estilos para celdas con título */
 .tabla-organigrama .seccion-titulo {
-    background-color: #4d82bc; 
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
+  background-color: #4d82bc; 
+  font-weight: 700; 
+  text-align: center; 
+  color: #ffffff; 
 }
 
+/* Estilos para la primera columna de celdas de datos */
 .tabla-organigrama td:first-child:not(.seccion-titulo) {
-    background-color: #f8f8c3; 
+  background-color: #f8f8c3; 
 }
 
+/* TABLET */
 @media (min-width: 766px) {
-    .fragmento-historia-article {
-        width: 90%; 
-        max-width: 900px; 
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /* Artículo de historia */
+  .fragmento-historia-article {
+    width: 90%; 
+    max-width: 900px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
 
-    .audio-container {
-        width: 90%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /* Contenedor de audio */
+  .audio-container {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .imagenes-historia-container {
-        flex-direction: row; 
-        justify-content: center; 
-        align-items: flex-start; 
-        gap: 20px;
-        width: 90%;
-        max-width: 750px;
-        padding-right: 20px; 
-    }
+  /* Contenedor de imágenes - Cambia a horizontal  y centra */
+  .imagenes-historia-container {
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 20px; 
+    width: 90%;
+    max-width: 750px;
+    padding-right: 20px; 
+  }
 
-.imagenes-historia-container img {
-        width: 45%; 
-        max-width: 350px; 
-        height: 250px; 
-    }
+  /* Imágenes */
+  .imagenes-historia-container img {
+    width: 45%; 
+    max-width: 350px; 
+    height: 250px; 
+  }
 
-    .organigrama-rfevb {
-        width: 90%;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /* Organigrama: Centra y limita el ancho */
+  .organigrama-rfevb {
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+/* LAPTOPS */
 @media (min-width: 1024px) {
-    #pagina-principal-contenido {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "historia imagenes"
-            "audio1 audio2";
-        width: 90%;
-        max-width: 1200px;
-        margin: 20px auto;
-        gap: 20px;
-        align-items: start;
-    }
+  /* Contenido principal - Usa Grid para una disposición de 2 columnas */
+  #pagina-principal-contenido {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    grid-template-rows: auto auto; 
+    grid-template-areas: 
+      "historia imagenes"
+      "audio1 audio2";
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    gap: 20px; 
+    align-items: start;
+  }
 
-    .fragmento-historia-article {
-        grid-area: historia;
-        width: 80%;
-        max-width: none;
-        margin: 0;
-        padding: 20px;
-    }
+  /* Artículo de historia */
+  .fragmento-historia-article {
+    grid-area: historia; 
+    width: 80%; 
+    max-width: none; 
+    margin: 0; 
+    padding: 20px; 
+  }
 
-.imagenes-historia-container {
-        grid-area: imagenes;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 15px;
-        margin: 0;
-        width: 75%;
-        padding-top: 20px;
-        padding-right: 20px; 
-    }
+  /* Contenedor de imágenes */
+  .imagenes-historia-container {
+    grid-area: imagenes; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 15px;
+    margin: 0;
+    width: 75%; 
+    padding-top: 20px;
+    padding-right: 20px;
+  }
 
-    .imagenes-historia-container img {
-        width: 80%;
-        max-width: 400px;
-    }
+  /* Imágenes */
+  .imagenes-historia-container img {
+    width: 80%; 
+    max-width: 400px;
+  }
 
-    .audio-container {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-    }
+  /* Contenedor de audio: Ocupa todo el ancho de su celda */
+  .audio-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
 
-    .audio-container:nth-of-type(1) {
-        grid-area: audio1;
-        border-right: 1px solid #ccc; 
-    }
+  /* Primer contenedor de audio y añade un borde separador */
+  .audio-container:nth-of-type(1) {
+    grid-area: audio1;
+    border-right: 1px solid #ccc; 
+  }
 
-    .audio-container:nth-of-type(2) {
-        grid-area: audio2;
-    }
+  /* Segundo contenedor de audio */
+  .audio-container:nth-of-type(2) {
+    grid-area: audio2;
+  }
 
-.organigrama-rfevb {
-        grid-column: 1 / -1;       
-        width: 90%;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /* Organigrama: Ocupa las dos columnas del grid */
+  .organigrama-rfevb {
+    grid-column: 1 / -1; /* Se extiende desde la primera columna hasta la última */
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
 }
 
+/* DESKTOP (Monitores grandes) */
 @media (min-width: 1920px) {
-    #pagina-principal-contenido {
-        max-width: 1600px;
-        gap: 30px; 
-    }
+  /* Contenido principal: Aumenta el ancho máximo y el espacio entre celdas */
+  #pagina-principal-contenido {
+    max-width: 1600px;
+    gap: 30px; 
+  }
 
-    .imagenes-historia-container img {
-        max-width: 500px;
-    }
+  /* Imágenes: Aumenta el ancho máximo */
+  .imagenes-historia-container img {
+    max-width: 500px;
+  }
 
-    .organigrama-rfevb {
-        max-width: 1000px;
-    }
-    
+  /* Organigrama: Aumenta el ancho máximo */
+  .organigrama-rfevb {
+    max-width: 1000px;
+  }
 }

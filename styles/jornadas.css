@@ -52,7 +52,7 @@
 .eq-local, .eq-vistante{
     padding: 10px;
 }
-/*borde redondeado - la separación es necearía para poder hacer bien el efecto*/
+/*borde redondeado - la separación es necesaria para poder hacer bien el efecto*/
 .eq-local{
     border-top-left-radius: 10px;
 }
@@ -75,7 +75,7 @@
     background-color: #84b6f4; /* Un color ligeramente más claro al pasar el ratón */
     transform: scale(1.03);
 }
-/*Gracias a esto podemos alinear el logo de el equipo con el texto*/
+/*Gracias a esto podemos alinear el logo del equipo con el texto*/
 .jornada-equipo {
     display: flex;
     justify-content: flex-start;
