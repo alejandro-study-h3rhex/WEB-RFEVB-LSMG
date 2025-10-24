@@ -1,3 +1,15 @@
+/*ANIMACION*/
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 #intro{
     padding: 10px 20px;
 }
@@ -24,6 +36,14 @@
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+
+    view-timeline-name: --jornada;
+    view-timeline-axis: x-axis;
+    animation-timeline: --jornada;
+    animation-name: slideInFromLeft;
+    animation-duration: 0.4s;
+    animation-range: entry 25% cover 35%;
+
 }
 
 .jornada table{
@@ -68,6 +88,7 @@
     padding: 2px 10px;
     border: 2px solid #eeebe4;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*Efecto sobre celdas*/
