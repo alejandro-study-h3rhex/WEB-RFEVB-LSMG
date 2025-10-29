@@ -1,3 +1,16 @@
+/*ANIMACION*/
+@keyframes pop {
+    0% {
+        opacity: 0.3;
+        scale: 0.4;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
 .noticias-container{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -20,6 +33,17 @@
     background-color: #D7D3CA9E;
 
     font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+    view-timeline-name: --noticia;
+    view-timeline-axis: block;
+    animation-timeline: --noticia;
+    animation-name: pop;
+    animation-duration: 1s;
+    animation-range: entry 0% cover 80%;
+    animation-fill-mode: both;
+
+    will-change: transform, opacity;
+    backface-visibility: hidden;
 }
 
 /*Hay que estilizar específicamente el header  de la noticia para evitar conflictos con el header global*/

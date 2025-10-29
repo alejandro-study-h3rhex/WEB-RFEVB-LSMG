@@ -38,11 +38,15 @@
     text-align: center;
 
     view-timeline-name: --jornada;
-    view-timeline-axis: x-axis;
+    view-timeline-axis: block;
     animation-timeline: --jornada;
     animation-name: slideInFromLeft;
-    animation-duration: 0.4s;
-    animation-range: entry 25% cover 35%;
+    animation-duration: 1s;
+    animation-range: entry 0% cover 80%;
+    animation-fill-mode: both;
+
+    will-change: transform, opacity;
+    backface-visibility: hidden;
 
 }
 

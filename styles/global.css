@@ -183,6 +183,10 @@ header h1 {
     border: 2px solid #4d82bc;
     border-radius: 10px;
     padding: 10px;
+
+    transition: all 0.3s ease-in-out;
+
+    overflow: hidden;
 }
 
 .menu-navegacion ul {
@@ -233,7 +237,9 @@ header h1 {
     background-color: rgb(70, 128, 191);
 }
 
-/*Cuando la CHECKBOX del menu-toggle-input está activado se muestra el menú*/
+
+
+    /*Cuando la CHECKBOX del menu-toggle-input está activado se muestra el menú*/
 .menu-toggle-input:checked + .menu-toggle-label + nav {
     display: block;
 }
