@@ -184,7 +184,6 @@ header h1 {
   gap: 9px;
 }
 
-
 .menu-navegacion nav {
   position: absolute;
   display: none;
@@ -200,7 +199,6 @@ header h1 {
   border-radius: 10px;
   padding: 10px;
 }
-
 
 .menu-navegacion ul {
   /*ORDEN*/
